@@ -1,0 +1,15 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file alias="incomeVector">./conf/IncomeVector.txt</file>
+	<file alias="expenditureFile">./conf/SpendingVectors.txt</file>
+	<file alias="priv">./images/privacy.png</file>
+	<file alias="start">./images/starterbudget.png</file>
+	<file alias="transac">./images/entertransaction.png</file>
+	<file alias="smart">./images/smartbudget.png</file>
+	<file alias="prev">./images/previewbudget.png</file>
+	<file alias="logloc">./images/loginlocal.png</file>
+	<file alias="sumspend">./images/summaryspending.png</file>
+	<file alias="sumbud">./images/summarybudget.png</file>
+	<file alias="sumtransac">./images/summarytransactions.png</file>
+</qresource>
+</RCC>

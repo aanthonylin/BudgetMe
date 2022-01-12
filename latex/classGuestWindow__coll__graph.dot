@@ -1,0 +1,37 @@
+digraph "GuestWindow"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GuestWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Guest user window."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="QMainWindow",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="WarningManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWarningManager.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_prefModel" ];
+  Node4 [label="PreferencesModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPreferencesModel.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_budgetModel" ];
+  Node5 [label="BudgetMeModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBudgetMeModel.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="StarterBudgetModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStarterBudgetModel.html",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="EnterTransactionModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnterTransactionModel.html",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="PreviewBudgetModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPreviewBudgetModel.html",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_budgetManager" ];
+  Node9 [label="BudgetManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBudgetManager.html",tooltip="BudgetMe Algorithms."];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_prefModel" ];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_storageManager" ];
+  Node10 [label="LocalStorageManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLocalStorageManager.html",tooltip="Interface for database models."];
+  Node11 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_statsManager" ];
+  Node11 [label="BudgetMeDataManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBudgetMeDataManager.html",tooltip="An object that will retrieve data specifically for BudgetMe."];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" request" ];
+  Node12 [label="StatsCanadaManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStatsCanadaManager.html",tooltip="An object that will retrieve data from Statisitcs Canada."];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" manager" ];
+  Node13 [label="RequestManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRequestManager.html",tooltip="Makes a request to an API."];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_featureModel" ];
+  Node14 [label="FeatureModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFeatureModel.html",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="MainWindowModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMainWindowModel.html",tooltip=" "];
+}

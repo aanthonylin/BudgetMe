@@ -1,0 +1,110 @@
+\hypertarget{classSimpleBudgetManager}{}\doxysection{Simple\+Budget\+Manager Class Reference}
+\label{classSimpleBudgetManager}\index{SimpleBudgetManager@{SimpleBudgetManager}}
+
+
+Inheritance diagram for Simple\+Budget\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for Simple\+Budget\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSimpleBudgetManager_a8f8fa82989019d77b44458e5a395bddc}{is\+Within\+Budget}} (std\+::vector$<$ int $>$, std\+::vector$<$ int $>$)
+\begin{DoxyCompactList}\small\item\em Makes sure spending is within budget. \end{DoxyCompactList}\item 
+std\+::vector$<$ bool $>$ \mbox{\hyperlink{classSimpleBudgetManager_a9c7a2d5905d0da24c5e904b8aabe8579}{get\+Overspending}} (std\+::vector$<$ int $>$, std\+::vector$<$ int $>$)
+\begin{DoxyCompactList}\small\item\em Lists overspending amounts. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSimpleBudgetManager_a40cb101784c7f1c7d4530b41eca4f83e}{starter\+Budget}} (std\+::vector$<$ int $>$, int, int)
+\begin{DoxyCompactList}\small\item\em Generate Starter Budget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSimpleBudgetManager_aec2af340a4572506570644616d65d6b6}\label{classSimpleBudgetManager_aec2af340a4572506570644616d65d6b6}} 
+std\+::vector$<$ int $>$ {\bfseries smart\+Spend} (std\+::vector$<$ int $>$, std\+::vector$<$ int $>$, double)
+\item 
+\mbox{\Hypertarget{classSimpleBudgetManager_a1a7e53705564528f88aaaebd2724b856}\label{classSimpleBudgetManager_a1a7e53705564528f88aaaebd2724b856}} 
+std\+::vector$<$ int $>$ {\bfseries smart\+Budget} (std\+::vector$<$ int $>$, std\+::vector$<$ int $>$, std\+::vector$<$ int $>$, double)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimpleBudgetManager_a9c7a2d5905d0da24c5e904b8aabe8579}\label{classSimpleBudgetManager_a9c7a2d5905d0da24c5e904b8aabe8579}} 
+\index{SimpleBudgetManager@{SimpleBudgetManager}!getOverspending@{getOverspending}}
+\index{getOverspending@{getOverspending}!SimpleBudgetManager@{SimpleBudgetManager}}
+\doxysubsubsection{\texorpdfstring{getOverspending()}{getOverspending()}}
+{\footnotesize\ttfamily vector$<$ bool $>$ Simple\+Budget\+Manager\+::get\+Overspending (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{,  }\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lists overspending amounts. 
+
+Provides the amounts by which the user is overspending in each category.
+
+
+\begin{DoxyParams}{Parameters}
+{\em est\+Spending} & \+: user-\/estimated spending per category. \\
+\hline
+{\em budget} & \+: budget assigned to the user per category.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The amounts per category of overspending. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBudgetManager_a7e331229a4563ab01e4a9b01c4d69833}{Budget\+Manager}}.
+
+\mbox{\Hypertarget{classSimpleBudgetManager_a8f8fa82989019d77b44458e5a395bddc}\label{classSimpleBudgetManager_a8f8fa82989019d77b44458e5a395bddc}} 
+\index{SimpleBudgetManager@{SimpleBudgetManager}!isWithinBudget@{isWithinBudget}}
+\index{isWithinBudget@{isWithinBudget}!SimpleBudgetManager@{SimpleBudgetManager}}
+\doxysubsubsection{\texorpdfstring{isWithinBudget()}{isWithinBudget()}}
+{\footnotesize\ttfamily bool Simple\+Budget\+Manager\+::is\+Within\+Budget (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{,  }\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Makes sure spending is within budget. 
+
+Check each category of estimated spending and verifies that it\textquotesingle{}s within the budget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em est\+Spending} & \+: user-\/estimated spending per category. \\
+\hline
+{\em budget} & \+: budget assigned to the user per category.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is no overspending, and false if a spending category exceeds its budget 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBudgetManager_a1f7c5d522687e9616e802c84c21bd252}{Budget\+Manager}}.
+
+\mbox{\Hypertarget{classSimpleBudgetManager_a40cb101784c7f1c7d4530b41eca4f83e}\label{classSimpleBudgetManager_a40cb101784c7f1c7d4530b41eca4f83e}} 
+\index{SimpleBudgetManager@{SimpleBudgetManager}!starterBudget@{starterBudget}}
+\index{starterBudget@{starterBudget}!SimpleBudgetManager@{SimpleBudgetManager}}
+\doxysubsubsection{\texorpdfstring{starterBudget()}{starterBudget()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Simple\+Budget\+Manager\+::starter\+Budget (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Generate Starter Budget. 
+
+Creates a first budget for the user based on their estimated spending and income and values from Statistics Canada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em avg\+Spending} & \+: Average Canadian spending per category in dollar amounts.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON OF R\+E\+T\+U\+RN 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBudgetManager_a58a62dfb568cf434f4d0b7f7bdaa6503}{Budget\+Manager}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simplebudgetmanager.\+h\item 
+simplebudgetmanager.\+cpp\end{DoxyCompactItemize}

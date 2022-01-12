@@ -1,0 +1,251 @@
+\hypertarget{classStatsCanadaManager}{}\doxysection{Stats\+Canada\+Manager Class Reference}
+\label{classStatsCanadaManager}\index{StatsCanadaManager@{StatsCanadaManager}}
+
+
+An object that will retrieve data from Statisitcs Canada.  
+
+
+
+
+{\ttfamily \#include $<$Stats\+Canada\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Stats\+Canada\+Manager\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classStatsCanadaManager_a5193ef147bfcb775ff3b56eff8e6bd7e}{set\+Data\+U\+RL}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em It sets where to get the data from. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatsCanadaManager_a6073841da2a12f2043e2205dd23daea0}{set\+Metadata\+U\+RL}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em It sets where to get the metadata from. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classStatsCanadaManager_affc0f731724454cda24484a9f5e2f0b7}{get\+Data}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Makes a request to get the data. \end{DoxyCompactList}\item 
+std\+::vector$<$ Q\+String $>$ \mbox{\hyperlink{classStatsCanadaManager_accfde63f1a5fe7b49d666671ee349079}{get\+Metadata}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Makes a request to get the metadata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classStatsCanadaManager_a4d0bef8ea8408b8d7f7bd5a1f371b916}{set\+Source}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Sets the source of the request. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classStatsCanadaManager_af7fa10fe3d84c678e5b068e1171d7026}{make\+Post\+Body}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Makes a J\+S\+ON for a P\+O\+ST request to Stats\+Canada. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classStatsCanadaManager_ad2a7cac633a0d64842c846786c526ccd}{parse\+Data}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Parses the response from the A\+PI. \end{DoxyCompactList}\item 
+std\+::vector$<$ Q\+String $>$ \mbox{\hyperlink{classStatsCanadaManager_ae65e7c3caaaa97522ffe32844beccd11}{parse\+Metadata}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Parses the response from the A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRequestManager}{Request\+Manager}} \mbox{\hyperlink{classStatsCanadaManager_ade2b2e05daa36126e4c57c9d590d148e}{manager}}
+\begin{DoxyCompactList}\small\item\em An object that makes request. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classStatsCanadaManager_aa66d05cf0716db23b226682d98c315b9}{data\+U\+RL}} = data\+Link
+\begin{DoxyCompactList}\small\item\em The source of the data. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classStatsCanadaManager_a193d424f7a146b7576f9a0aace659065}{metadata\+U\+RL}} = metadata\+Link
+\begin{DoxyCompactList}\small\item\em The source of the metadata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object that will retrieve data from Statisitcs Canada. 
+
+It calls the \mbox{\hyperlink{classRequestManager}{Request\+Manager}} object and makes a P\+O\+ST request to get data. This object will only work for Statistics Canada as it is designed to parse their returned data and make a P\+O\+ST body designed for Statistics Canada. To make a more general P\+O\+ST request, look at the \textquotesingle{}\mbox{\hyperlink{classRequestManager}{Request\+Manager}}\textquotesingle{} object.
+
+\begin{DoxyAuthor}{Author}
+Anthony Lin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStatsCanadaManager_affc0f731724454cda24484a9f5e2f0b7}\label{classStatsCanadaManager_affc0f731724454cda24484a9f5e2f0b7}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!getData@{getData}}
+\index{getData@{getData}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Stats\+Canada\+Manager\+::get\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+Name }\end{DoxyParamCaption})}
+
+
+
+Makes a request to get the data. 
+
+It prepares the request and makes the required parameters that will be sent during the request. It then makes the request and processes the data it returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Name} & A file of vectors that represent the desired data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An vector of integers storing the associated values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatsCanadaManager_accfde63f1a5fe7b49d666671ee349079}\label{classStatsCanadaManager_accfde63f1a5fe7b49d666671ee349079}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!getMetadata@{getMetadata}}
+\index{getMetadata@{getMetadata}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{getMetadata()}{getMetadata()}}
+{\footnotesize\ttfamily std\+::vector$<$ Q\+String $>$ Stats\+Canada\+Manager\+::get\+Metadata (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+Name }\end{DoxyParamCaption})}
+
+
+
+Makes a request to get the metadata. 
+
+It prepares the request and makes the required parameters that will be sent during the request. It then makes the request and processes the metadata it returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Name} & A file of vectors that represent the desired metadata\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An vector of Q\+String storing the associated values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatsCanadaManager_af7fa10fe3d84c678e5b068e1171d7026}\label{classStatsCanadaManager_af7fa10fe3d84c678e5b068e1171d7026}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!makePostBody@{makePostBody}}
+\index{makePostBody@{makePostBody}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{makePostBody()}{makePostBody()}}
+{\footnotesize\ttfamily std\+::string Stats\+Canada\+Manager\+::make\+Post\+Body (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+Name,  }\item[{std\+::string}]{body\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Makes a J\+S\+ON for a P\+O\+ST request to Stats\+Canada. 
+
+It takes a file and reads from it. Each line should be a vector and it creates a J\+S\+ON that ends with the user specified end\+Body. The J\+S\+ON is used to tell Statistics Canada the data that we want
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Name} & The name of the file that is to be converted into a J\+S\+ON \\
+\hline
+{\em body\+End} & A string stating how the request should end for each entry in the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string in the form of a J\+S\+ON that can be sent to make the P\+O\+ST request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatsCanadaManager_ad2a7cac633a0d64842c846786c526ccd}\label{classStatsCanadaManager_ad2a7cac633a0d64842c846786c526ccd}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!parseData@{parseData}}
+\index{parseData@{parseData}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{parseData()}{parseData()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Stats\+Canada\+Manager\+::parse\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Parses the response from the A\+PI. 
+
+It takes the A\+PI response and removes all the \textquotesingle{}unnecessary\textquotesingle{} data. When it comes upon the desired value, it stores it in the vector and continues to search for the next value until all the data is found
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The J\+S\+ON that the A\+PI returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An vector of integers storing the associated values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatsCanadaManager_ae65e7c3caaaa97522ffe32844beccd11}\label{classStatsCanadaManager_ae65e7c3caaaa97522ffe32844beccd11}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!parseMetadata@{parseMetadata}}
+\index{parseMetadata@{parseMetadata}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{parseMetadata()}{parseMetadata()}}
+{\footnotesize\ttfamily std\+::vector$<$ Q\+String $>$ Stats\+Canada\+Manager\+::parse\+Metadata (\begin{DoxyParamCaption}\item[{std\+::string}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Parses the response from the A\+PI. 
+
+It takes the A\+PI response and removes all the \textquotesingle{}unnecessary\textquotesingle{} metadata. When it comes upon the desired value (the name of the category), it stores it in the vector and continues to search for the next value until all the data is found
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The J\+S\+ON that the A\+PI returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An vector of Q\+String storing the associated values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatsCanadaManager_a5193ef147bfcb775ff3b56eff8e6bd7e}\label{classStatsCanadaManager_a5193ef147bfcb775ff3b56eff8e6bd7e}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!setDataURL@{setDataURL}}
+\index{setDataURL@{setDataURL}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{setDataURL()}{setDataURL()}}
+{\footnotesize\ttfamily void Stats\+Canada\+Manager\+::set\+Data\+U\+RL (\begin{DoxyParamCaption}\item[{std\+::string}]{url }\end{DoxyParamCaption})}
+
+
+
+It sets where to get the data from. 
+
+It takes the parameter and sets the \mbox{\hyperlink{classRequestManager}{Request\+Manager}} to it so that when the request is made, the data sent is to the right place and therefore, the data retrieved is correct
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the url of where to get the data from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatsCanadaManager_a6073841da2a12f2043e2205dd23daea0}\label{classStatsCanadaManager_a6073841da2a12f2043e2205dd23daea0}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!setMetadataURL@{setMetadataURL}}
+\index{setMetadataURL@{setMetadataURL}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{setMetadataURL()}{setMetadataURL()}}
+{\footnotesize\ttfamily void Stats\+Canada\+Manager\+::set\+Metadata\+U\+RL (\begin{DoxyParamCaption}\item[{std\+::string}]{url }\end{DoxyParamCaption})}
+
+
+
+It sets where to get the metadata from. 
+
+It takes the parameter and sets the \mbox{\hyperlink{classRequestManager}{Request\+Manager}} to it so that when the request is made, the data sent is to the right place and therefore, the metadata retrieved is correct
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the url of where to get the metadata from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatsCanadaManager_a4d0bef8ea8408b8d7f7bd5a1f371b916}\label{classStatsCanadaManager_a4d0bef8ea8408b8d7f7bd5a1f371b916}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!setSource@{setSource}}
+\index{setSource@{setSource}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Stats\+Canada\+Manager\+::set\+Source (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the source of the request. 
+
+It sets the U\+RL of the \mbox{\hyperlink{classRequestManager}{Request\+Manager}} to the parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Source} & the source that the \mbox{\hyperlink{classRequestManager}{Request\+Manager}} should be set to \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classStatsCanadaManager_aa66d05cf0716db23b226682d98c315b9}\label{classStatsCanadaManager_aa66d05cf0716db23b226682d98c315b9}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!dataURL@{dataURL}}
+\index{dataURL@{dataURL}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{dataURL}{dataURL}}
+{\footnotesize\ttfamily std\+::string Stats\+Canada\+Manager\+::data\+U\+RL = data\+Link\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The source of the data. 
+
+The source of the metadata. It is defaulted to \char`\"{}https\+://www150.\+statcan.\+gc.\+ca/t1/wds/rest/get\+Data\+From\+Vectors\+And\+Latest\+N\+Periods\char`\"{} \mbox{\Hypertarget{classStatsCanadaManager_ade2b2e05daa36126e4c57c9d590d148e}\label{classStatsCanadaManager_ade2b2e05daa36126e4c57c9d590d148e}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!manager@{manager}}
+\index{manager@{manager}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRequestManager}{Request\+Manager}} Stats\+Canada\+Manager\+::manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An object that makes request. 
+
+This object can make request to any A\+PI but does not have a lot of functionality otherwise \mbox{\Hypertarget{classStatsCanadaManager_a193d424f7a146b7576f9a0aace659065}\label{classStatsCanadaManager_a193d424f7a146b7576f9a0aace659065}} 
+\index{StatsCanadaManager@{StatsCanadaManager}!metadataURL@{metadataURL}}
+\index{metadataURL@{metadataURL}!StatsCanadaManager@{StatsCanadaManager}}
+\doxysubsubsection{\texorpdfstring{metadataURL}{metadataURL}}
+{\footnotesize\ttfamily std\+::string Stats\+Canada\+Manager\+::metadata\+U\+RL = metadata\+Link\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The source of the metadata. 
+
+The source of the metadata. It is defaulted to \char`\"{}https\+://www150.\+statcan.\+gc.\+ca/t1/wds/rest/get\+Series\+Info\+From\+Vector\char`\"{} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Stats\+Canada\+Manager.\+h\item 
+Stats\+Canada\+Manager.\+cpp\end{DoxyCompactItemize}

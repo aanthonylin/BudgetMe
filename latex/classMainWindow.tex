@@ -1,0 +1,238 @@
+\hypertarget{classMainWindow}{}\doxysection{Main\+Window Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+Authenticated user window.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainWindow_ad4883a07de0e044c6bb2d2133501f884}{Main\+Window}} (\mbox{\hyperlink{classLocalStorageManager}{Local\+Storage\+Manager}} $\ast$)
+\item 
+\mbox{\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a6f526139f94aa3beac0822227a027181}{go\+Starter\+Budget}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_aa06a0f01b90a36ea0e6ed84a55afe86c}{go\+Enter\+Transaction}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a6a289720abe728a3ccaf261e89546266}{go\+Preview\+Budget}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_ac7d5957711b791aef05b167668728ac7}{go\+Login\+Local}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_afe5de1477dd35b799ff486f453fb4510}{go\+Summary\+Spending}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a8e04f37add4a5c3119e236209c58d647}{go\+Summary\+Budget}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_ac3f8758c78a56cd718ee5177178f63de}{go\+Summary\+Transaction}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_abfd770c0b1ac74ea8736b8e5e6275815}{go\+Summary\+Preview}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a233fd7f211ad4658bbb44cc068cc02e4}{go\+Compare\+Avg}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a9f124a08cea28496519955ed97d5421a}{go\+Compare\+Budget}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a16c4e03565a2d426450cfe5d941502c5}{go\+Compare\+Preview}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_aa7b1f3b3169c3331a15613430d7e7a70}{go\+Compare\+Local}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_ae8eb086e905e87aee6de50558ad36129}{go\+Compare\+Server}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a62469e072ee7fc7b52f4bde82a1b3d9e}{go\+Summary\+Overspending}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a7b09b468c0234436a68a7a4ce341d174}{go\+Preferences}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a4229b66ad669eccfb75ec8e159959acf}{show\+Overspending\+Warning}} ()
+\begin{DoxyCompactList}\small\item\em Pops up a short overspending warning. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a0549d6af9eb6555bfd9b3a42167f9716}{hide\+Overspending\+Warning}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_acce4e32b95d3d5cb48470c053a1740c2}{create\+Tool\+Bars}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_ae5f97ce52f2db78c68249eafc626d122}\label{classMainWindow_ae5f97ce52f2db78c68249eafc626d122}} 
+\mbox{\hyperlink{classFeatureModel}{Feature\+Model}} $\ast$ {\bfseries m\+\_\+feature\+Model}
+\item 
+\mbox{\Hypertarget{classMainWindow_a46f110196b32babbf021ead003857191}\label{classMainWindow_a46f110196b32babbf021ead003857191}} 
+\mbox{\hyperlink{classBudgetMeModel}{Budget\+Me\+Model}} $\ast$ {\bfseries m\+\_\+budget\+Model}
+\item 
+\mbox{\Hypertarget{classMainWindow_ac3a727c0ea5b06aed10b6080f57d6ad9}\label{classMainWindow_ac3a727c0ea5b06aed10b6080f57d6ad9}} 
+\mbox{\hyperlink{classPreferencesModel}{Preferences\+Model}} $\ast$ {\bfseries m\+\_\+pref\+Model}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Authenticated user window. 
+
+Window presented to a user that has logged in successfully.
+
+\begin{DoxyAuthor}{Author}
+Christopher F. S. Maligec 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_ad4883a07de0e044c6bb2d2133501f884}\label{classMainWindow_ad4883a07de0e044c6bb2d2133501f884}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLocalStorageManager}{Local\+Storage\+Manager}} $\ast$}]{storage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Sets up the main G\+UI that will contain all the feature screens.
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage} & The \mbox{\hyperlink{classLocalStorageManager}{Local\+Storage\+Manager}} used by the rest of the app. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_acce4e32b95d3d5cb48470c053a1740c2}\label{classMainWindow_acce4e32b95d3d5cb48470c053a1740c2}} 
+\index{MainWindow@{MainWindow}!createToolBars@{createToolBars}}
+\index{createToolBars@{createToolBars}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createToolBars()}{createToolBars()}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Tool\+Bars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Helper method to populate the main toolbar. \mbox{\Hypertarget{classMainWindow_a233fd7f211ad4658bbb44cc068cc02e4}\label{classMainWindow_a233fd7f211ad4658bbb44cc068cc02e4}} 
+\index{MainWindow@{MainWindow}!goCompareAvg@{goCompareAvg}}
+\index{goCompareAvg@{goCompareAvg}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goCompareAvg()}{goCompareAvg()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Compare\+Avg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Compare to Average Canadian Spending screen. \mbox{\Hypertarget{classMainWindow_a9f124a08cea28496519955ed97d5421a}\label{classMainWindow_a9f124a08cea28496519955ed97d5421a}} 
+\index{MainWindow@{MainWindow}!goCompareBudget@{goCompareBudget}}
+\index{goCompareBudget@{goCompareBudget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goCompareBudget()}{goCompareBudget()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Compare\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Compare to Actual Budget screen. \mbox{\Hypertarget{classMainWindow_aa7b1f3b3169c3331a15613430d7e7a70}\label{classMainWindow_aa7b1f3b3169c3331a15613430d7e7a70}} 
+\index{MainWindow@{MainWindow}!goCompareLocal@{goCompareLocal}}
+\index{goCompareLocal@{goCompareLocal}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goCompareLocal()}{goCompareLocal()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Compare\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Compare to Local Spending screen. \mbox{\Hypertarget{classMainWindow_a16c4e03565a2d426450cfe5d941502c5}\label{classMainWindow_a16c4e03565a2d426450cfe5d941502c5}} 
+\index{MainWindow@{MainWindow}!goComparePreview@{goComparePreview}}
+\index{goComparePreview@{goComparePreview}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goComparePreview()}{goComparePreview()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Compare\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Compare Preview Budget screen. \mbox{\Hypertarget{classMainWindow_ae8eb086e905e87aee6de50558ad36129}\label{classMainWindow_ae8eb086e905e87aee6de50558ad36129}} 
+\index{MainWindow@{MainWindow}!goCompareServer@{goCompareServer}}
+\index{goCompareServer@{goCompareServer}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goCompareServer()}{goCompareServer()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Compare\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Compare to Server Spending screen. \mbox{\Hypertarget{classMainWindow_aa06a0f01b90a36ea0e6ed84a55afe86c}\label{classMainWindow_aa06a0f01b90a36ea0e6ed84a55afe86c}} 
+\index{MainWindow@{MainWindow}!goEnterTransaction@{goEnterTransaction}}
+\index{goEnterTransaction@{goEnterTransaction}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goEnterTransaction()}{goEnterTransaction()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Enter\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Enter Transaction screen. \mbox{\Hypertarget{classMainWindow_ac7d5957711b791aef05b167668728ac7}\label{classMainWindow_ac7d5957711b791aef05b167668728ac7}} 
+\index{MainWindow@{MainWindow}!goLoginLocal@{goLoginLocal}}
+\index{goLoginLocal@{goLoginLocal}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goLoginLocal()}{goLoginLocal()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Login\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Login Local screen. \mbox{\Hypertarget{classMainWindow_a7b09b468c0234436a68a7a4ce341d174}\label{classMainWindow_a7b09b468c0234436a68a7a4ce341d174}} 
+\index{MainWindow@{MainWindow}!goPreferences@{goPreferences}}
+\index{goPreferences@{goPreferences}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goPreferences()}{goPreferences()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Preferences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Preferences screen. \mbox{\Hypertarget{classMainWindow_a6a289720abe728a3ccaf261e89546266}\label{classMainWindow_a6a289720abe728a3ccaf261e89546266}} 
+\index{MainWindow@{MainWindow}!goPreviewBudget@{goPreviewBudget}}
+\index{goPreviewBudget@{goPreviewBudget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goPreviewBudget()}{goPreviewBudget()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Preview\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Generate Preview Budget screen. \mbox{\Hypertarget{classMainWindow_a6f526139f94aa3beac0822227a027181}\label{classMainWindow_a6f526139f94aa3beac0822227a027181}} 
+\index{MainWindow@{MainWindow}!goStarterBudget@{goStarterBudget}}
+\index{goStarterBudget@{goStarterBudget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goStarterBudget()}{goStarterBudget()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Starter\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Generate Starter Budget screen. \mbox{\Hypertarget{classMainWindow_a8e04f37add4a5c3119e236209c58d647}\label{classMainWindow_a8e04f37add4a5c3119e236209c58d647}} 
+\index{MainWindow@{MainWindow}!goSummaryBudget@{goSummaryBudget}}
+\index{goSummaryBudget@{goSummaryBudget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goSummaryBudget()}{goSummaryBudget()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Summary\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Summary Budget screen. \mbox{\Hypertarget{classMainWindow_a62469e072ee7fc7b52f4bde82a1b3d9e}\label{classMainWindow_a62469e072ee7fc7b52f4bde82a1b3d9e}} 
+\index{MainWindow@{MainWindow}!goSummaryOverspending@{goSummaryOverspending}}
+\index{goSummaryOverspending@{goSummaryOverspending}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goSummaryOverspending()}{goSummaryOverspending()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Summary\+Overspending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Summary Overspending screen. \mbox{\Hypertarget{classMainWindow_abfd770c0b1ac74ea8736b8e5e6275815}\label{classMainWindow_abfd770c0b1ac74ea8736b8e5e6275815}} 
+\index{MainWindow@{MainWindow}!goSummaryPreview@{goSummaryPreview}}
+\index{goSummaryPreview@{goSummaryPreview}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goSummaryPreview()}{goSummaryPreview()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Summary\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to Summary Preview Budget screen. \mbox{\Hypertarget{classMainWindow_afe5de1477dd35b799ff486f453fb4510}\label{classMainWindow_afe5de1477dd35b799ff486f453fb4510}} 
+\index{MainWindow@{MainWindow}!goSummarySpending@{goSummarySpending}}
+\index{goSummarySpending@{goSummarySpending}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goSummarySpending()}{goSummarySpending()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Summary\+Spending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Summary Spending screen. \mbox{\Hypertarget{classMainWindow_ac3f8758c78a56cd718ee5177178f63de}\label{classMainWindow_ac3f8758c78a56cd718ee5177178f63de}} 
+\index{MainWindow@{MainWindow}!goSummaryTransaction@{goSummaryTransaction}}
+\index{goSummaryTransaction@{goSummaryTransaction}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{goSummaryTransaction()}{goSummaryTransaction()}}
+{\footnotesize\ttfamily void Main\+Window\+::go\+Summary\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transition to the Summary Transaction screen. \mbox{\Hypertarget{classMainWindow_a0549d6af9eb6555bfd9b3a42167f9716}\label{classMainWindow_a0549d6af9eb6555bfd9b3a42167f9716}} 
+\index{MainWindow@{MainWindow}!hideOverspendingWarning@{hideOverspendingWarning}}
+\index{hideOverspendingWarning@{hideOverspendingWarning}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{hideOverspendingWarning()}{hideOverspendingWarning()}}
+{\footnotesize\ttfamily void Main\+Window\+::hide\+Overspending\+Warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Hides overspending warning. 
+
+Implements \mbox{\hyperlink{classWarningManager}{Warning\+Manager}}.
+
+\mbox{\Hypertarget{classMainWindow_a4229b66ad669eccfb75ec8e159959acf}\label{classMainWindow_a4229b66ad669eccfb75ec8e159959acf}} 
+\index{MainWindow@{MainWindow}!showOverspendingWarning@{showOverspendingWarning}}
+\index{showOverspendingWarning@{showOverspendingWarning}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showOverspendingWarning()}{showOverspendingWarning()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Overspending\+Warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pops up a short overspending warning. 
+
+The warning will appear at the bottom of every screen until hidden. 
+
+Implements \mbox{\hyperlink{classWarningManager}{Warning\+Manager}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

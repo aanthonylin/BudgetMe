@@ -1,0 +1,165 @@
+\hypertarget{classGraphModel}{}\doxysection{Graph\+Model Class Reference}
+\label{classGraphModel}\index{GraphModel@{GraphModel}}
+
+
+{\ttfamily \#include $<$Graph\+Model.\+h$>$}
+
+
+
+Inheritance diagram for Graph\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for Graph\+Model\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGraphModel_ab1bf7360a06e6327fb5d8db64d48642f}{Graph\+Model}} (\mbox{\hyperlink{classBudgetMeModel}{Budget\+Me\+Model}} $\ast$)
+\item 
+virtual \mbox{\hyperlink{classGraphModel_a5b97e10f448f838e5190795b6adce81f}{$\sim$\+Graph\+Model}} ()
+\item 
+virtual void \mbox{\hyperlink{classGraphModel_a7b59b8d66da894d4689c024ed34ca64f}{filter\+Data}} (Budget\+Me\+::\+Time\+Period)=0
+\item 
+int \mbox{\hyperlink{classGraphModel_a41d32b63dfd1ba783317ec69d81e78e7}{get\+Series\+Count}} ()
+\item 
+int \mbox{\hyperlink{classGraphModel_a724b5b881df903af9e1caf0270832f6c}{get\+Category\+Count}} ()
+\item 
+Q\+String \mbox{\hyperlink{classGraphModel_ad8d3d037c34c018cf6b13b5bc27e9451}{get\+Report}} ()
+\item 
+Q\+Horizontal\+Bar\+Series $\ast$ \mbox{\hyperlink{classGraphModel_ac35417574c7c06febe6150c03113def0}{get\+Bar}} ()
+\item 
+std\+::vector$<$ Q\+Pie\+Series $\ast$ $>$ \mbox{\hyperlink{classGraphModel_aafabd850df30df8715286b23db7ee93b}{get\+Pie}} ()
+\item 
+std\+::vector$<$ Q\+Line\+Series $\ast$ $>$ \mbox{\hyperlink{classGraphModel_afc6f19b36cd9f32670f7a8879a6f0e96}{get\+Line}} ()
+\item 
+std\+::vector$<$ Q\+Scatter\+Series $\ast$ $>$ \mbox{\hyperlink{classGraphModel_a160470f22dbb3958a4a5d99456aa62a3}{get\+Scatter}} ()
+\item 
+Q\+Value\+Axis $\ast$ \mbox{\hyperlink{classGraphModel_a9696e736d963f59f5747195eff05b56e}{value\+AxisY}} ()
+\item 
+Q\+Bar\+Category\+Axis $\ast$ \mbox{\hyperlink{classGraphModel_acb70a29d2ec3809a9c6699c8e82541ae}{bar\+AxisX}} ()
+\item 
+\mbox{\Hypertarget{classGraphModel_aed91eac6f1d02866b0033cdeb3645cf1}\label{classGraphModel_aed91eac6f1d02866b0033cdeb3645cf1}} 
+std\+::vector$<$ Q\+String $>$ {\bfseries cat\+Names} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBudgetMeModel}{Budget\+Me\+Model}} $\ast$ \mbox{\hyperlink{classGraphModel_a5780cbc7a8c8f874594c05052c01c16f}{sub\+Model}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraphModel_a045ebd46ccdc010a9d31ba28f399e964}{data}}
+\item 
+std\+::vector$<$ Q\+String $>$ \mbox{\hyperlink{classGraphModel_a328273706d0680c9a7b542dde019b4df}{data\+Names}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGraphModel}{Graph\+Model}} class is used to model the data by retrieving the data and then creating the series (line \& dots on the graph). @\+Author\+: Hazem Sabsabi @\+Date 06/11/2021 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraphModel_ab1bf7360a06e6327fb5d8db64d48642f}\label{classGraphModel_ab1bf7360a06e6327fb5d8db64d48642f}} 
+\index{GraphModel@{GraphModel}!GraphModel@{GraphModel}}
+\index{GraphModel@{GraphModel}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{GraphModel()}{GraphModel()}}
+{\footnotesize\ttfamily Graph\+Model\+::\+Graph\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBudgetMeModel}{Budget\+Me\+Model}} $\ast$}]{sub\+Model }\end{DoxyParamCaption})}
+
+Constructor storing the model to call the data \mbox{\Hypertarget{classGraphModel_a5b97e10f448f838e5190795b6adce81f}\label{classGraphModel_a5b97e10f448f838e5190795b6adce81f}} 
+\index{GraphModel@{GraphModel}!````~GraphModel@{$\sim$GraphModel}}
+\index{````~GraphModel@{$\sim$GraphModel}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$GraphModel()}{~GraphModel()}}
+{\footnotesize\ttfamily Graph\+Model\+::$\sim$\+Graph\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraphModel_acb70a29d2ec3809a9c6699c8e82541ae}\label{classGraphModel_acb70a29d2ec3809a9c6699c8e82541ae}} 
+\index{GraphModel@{GraphModel}!barAxisX@{barAxisX}}
+\index{barAxisX@{barAxisX}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{barAxisX()}{barAxisX()}}
+{\footnotesize\ttfamily Q\+Bar\+Category\+Axis $\ast$ Graph\+Model\+::bar\+AxisX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return the value of an Axis \mbox{\Hypertarget{classGraphModel_a7b59b8d66da894d4689c024ed34ca64f}\label{classGraphModel_a7b59b8d66da894d4689c024ed34ca64f}} 
+\index{GraphModel@{GraphModel}!filterData@{filterData}}
+\index{filterData@{filterData}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{filterData()}{filterData()}}
+{\footnotesize\ttfamily virtual void Graph\+Model\+::filter\+Data (\begin{DoxyParamCaption}\item[{Budget\+Me\+::\+Time\+Period}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual method to filter the data needed by each operation and comparison 
+
+Implemented in \mbox{\hyperlink{classCompareAvgModel_ad2a18c3073511e2d8173b2f660a4076c}{Compare\+Avg\+Model}}, \mbox{\hyperlink{classCompareBudgetModel_a83eb2365e2049a3d71ce28d031774db7}{Compare\+Budget\+Model}}, \mbox{\hyperlink{classCompareLocalModel_a7e1f7267321dbcd74d615102e3c5fc85}{Compare\+Local\+Model}}, \mbox{\hyperlink{classComparePreviewModel_aa79181368e57451d7c484069c9f158d5}{Compare\+Preview\+Model}}, \mbox{\hyperlink{classCompareServerModel_ab1df46167385522a3860f7eb9119843e}{Compare\+Server\+Model}}, \mbox{\hyperlink{classSummaryBudgetModel_aef070291896a4350357c19fecf9b980e}{Summary\+Budget\+Model}}, \mbox{\hyperlink{classSummaryPreviewModel_aacba2b78b5ce182fd4efd79fcf106814}{Summary\+Preview\+Model}}, and \mbox{\hyperlink{classSummarySpendingModel_aecf3505ef56d52fc6cb167b623de439b}{Summary\+Spending\+Model}}.
+
+\mbox{\Hypertarget{classGraphModel_ac35417574c7c06febe6150c03113def0}\label{classGraphModel_ac35417574c7c06febe6150c03113def0}} 
+\index{GraphModel@{GraphModel}!getBar@{getBar}}
+\index{getBar@{getBar}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getBar()}{getBar()}}
+{\footnotesize\ttfamily Q\+Horizontal\+Bar\+Series $\ast$ Graph\+Model\+::get\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return an a Bar Series \mbox{\Hypertarget{classGraphModel_a724b5b881df903af9e1caf0270832f6c}\label{classGraphModel_a724b5b881df903af9e1caf0270832f6c}} 
+\index{GraphModel@{GraphModel}!getCategoryCount@{getCategoryCount}}
+\index{getCategoryCount@{getCategoryCount}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getCategoryCount()}{getCategoryCount()}}
+{\footnotesize\ttfamily int Graph\+Model\+::get\+Category\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method that returns the number of categories used by the program \mbox{\Hypertarget{classGraphModel_afc6f19b36cd9f32670f7a8879a6f0e96}\label{classGraphModel_afc6f19b36cd9f32670f7a8879a6f0e96}} 
+\index{GraphModel@{GraphModel}!getLine@{getLine}}
+\index{getLine@{getLine}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily vector$<$ Q\+Line\+Series $\ast$ $>$ Graph\+Model\+::get\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return a Line Series \mbox{\Hypertarget{classGraphModel_aafabd850df30df8715286b23db7ee93b}\label{classGraphModel_aafabd850df30df8715286b23db7ee93b}} 
+\index{GraphModel@{GraphModel}!getPie@{getPie}}
+\index{getPie@{getPie}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getPie()}{getPie()}}
+{\footnotesize\ttfamily vector$<$ Q\+Pie\+Series $\ast$ $>$ Graph\+Model\+::get\+Pie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return a Pie Series \mbox{\Hypertarget{classGraphModel_ad8d3d037c34c018cf6b13b5bc27e9451}\label{classGraphModel_ad8d3d037c34c018cf6b13b5bc27e9451}} 
+\index{GraphModel@{GraphModel}!getReport@{getReport}}
+\index{getReport@{getReport}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getReport()}{getReport()}}
+{\footnotesize\ttfamily Q\+String Graph\+Model\+::get\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method that returns a report of the data specified by the filter method \mbox{\Hypertarget{classGraphModel_a160470f22dbb3958a4a5d99456aa62a3}\label{classGraphModel_a160470f22dbb3958a4a5d99456aa62a3}} 
+\index{GraphModel@{GraphModel}!getScatter@{getScatter}}
+\index{getScatter@{getScatter}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getScatter()}{getScatter()}}
+{\footnotesize\ttfamily vector$<$ Q\+Scatter\+Series $\ast$ $>$ Graph\+Model\+::get\+Scatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return a Scatter \textquotesingle{}Series\textquotesingle{} \mbox{\Hypertarget{classGraphModel_a41d32b63dfd1ba783317ec69d81e78e7}\label{classGraphModel_a41d32b63dfd1ba783317ec69d81e78e7}} 
+\index{GraphModel@{GraphModel}!getSeriesCount@{getSeriesCount}}
+\index{getSeriesCount@{getSeriesCount}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{getSeriesCount()}{getSeriesCount()}}
+{\footnotesize\ttfamily int Graph\+Model\+::get\+Series\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method that returns the number of Series to be used \mbox{\Hypertarget{classGraphModel_a9696e736d963f59f5747195eff05b56e}\label{classGraphModel_a9696e736d963f59f5747195eff05b56e}} 
+\index{GraphModel@{GraphModel}!valueAxisY@{valueAxisY}}
+\index{valueAxisY@{valueAxisY}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{valueAxisY()}{valueAxisY()}}
+{\footnotesize\ttfamily Q\+Value\+Axis $\ast$ Graph\+Model\+::value\+AxisY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return the Value of the y Axis 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGraphModel_a045ebd46ccdc010a9d31ba28f399e964}\label{classGraphModel_a045ebd46ccdc010a9d31ba28f399e964}} 
+\index{GraphModel@{GraphModel}!data@{data}}
+\index{data@{data}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Graph\+Model\+::data\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variable to hold the data \mbox{\Hypertarget{classGraphModel_a328273706d0680c9a7b542dde019b4df}\label{classGraphModel_a328273706d0680c9a7b542dde019b4df}} 
+\index{GraphModel@{GraphModel}!dataNames@{dataNames}}
+\index{dataNames@{dataNames}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{dataNames}{dataNames}}
+{\footnotesize\ttfamily std\+::vector$<$Q\+String$>$ Graph\+Model\+::data\+Names\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variable to hold the name of the Graph \mbox{\Hypertarget{classGraphModel_a5780cbc7a8c8f874594c05052c01c16f}\label{classGraphModel_a5780cbc7a8c8f874594c05052c01c16f}} 
+\index{GraphModel@{GraphModel}!subModel@{subModel}}
+\index{subModel@{subModel}!GraphModel@{GraphModel}}
+\doxysubsubsection{\texorpdfstring{subModel}{subModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBudgetMeModel}{Budget\+Me\+Model}}$\ast$ Graph\+Model\+::sub\+Model\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variable to hold the model that calls the data 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph\+Model.\+h\item 
+Graph\+Model.\+cpp\end{DoxyCompactItemize}

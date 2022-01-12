@@ -1,0 +1,127 @@
+\hypertarget{classBudgetMeModel}{}\doxysection{Budget\+Me\+Model Class Reference}
+\label{classBudgetMeModel}\index{BudgetMeModel@{BudgetMeModel}}
+
+
+Inheritance diagram for Budget\+Me\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for Budget\+Me\+Model\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a056cb5bc203804ac05a6a722a30306cb}\label{classBudgetMeModel_a056cb5bc203804ac05a6a722a30306cb}} 
+{\bfseries Budget\+Me\+Model} (\mbox{\hyperlink{classLocalStorageManager}{Local\+Storage\+Manager}} $\ast$, \mbox{\hyperlink{classBudgetMeDataManager}{Budget\+Me\+Data\+Manager}} $\ast$, \mbox{\hyperlink{classBudgetManager}{Budget\+Manager}} $\ast$, \mbox{\hyperlink{classPreferencesModel}{Preferences\+Model}} $\ast$)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_adf32bffcfee6b10d5827ab7b24a26493}\label{classBudgetMeModel_adf32bffcfee6b10d5827ab7b24a26493}} 
+int {\bfseries get\+Cat\+Num} ()
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a21dc0aef828980bd92a4980524d86c31}\label{classBudgetMeModel_a21dc0aef828980bd92a4980524d86c31}} 
+std\+::vector$<$ Q\+String $>$ {\bfseries get\+Cat\+Names} ()
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a70d30457c9bc364662582867ff991668}\label{classBudgetMeModel_a70d30457c9bc364662582867ff991668}} 
+Q\+String {\bfseries get\+Cat\+Name} (int)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a0fe55bf7f44ae308a15761858c437087}\label{classBudgetMeModel_a0fe55bf7f44ae308a15761858c437087}} 
+int {\bfseries get\+Income} ()
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a7cf0cdb94af1dfba4790e3cf7be2f1bb}\label{classBudgetMeModel_a7cf0cdb94af1dfba4790e3cf7be2f1bb}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Est\+Spending} (Budget\+Me\+::\+Time\+Period)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_aefb814ac62edee77cea0dba4ce9d87ad}\label{classBudgetMeModel_aefb814ac62edee77cea0dba4ce9d87ad}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Avg\+Spending} (Budget\+Me\+::\+Time\+Period)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a0aade1fab0b8091548881f31db05881d}\label{classBudgetMeModel_a0aade1fab0b8091548881f31db05881d}} 
+Q\+String {\bfseries get\+Income\+Question} ()
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_af171a87653a2ac1d1cee1f6cb6beaa08}\label{classBudgetMeModel_af171a87653a2ac1d1cee1f6cb6beaa08}} 
+Q\+String {\bfseries get\+Estimate\+Question} ()
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a33a7b91a6cbebb9bb40890cd7f7f7229}\label{classBudgetMeModel_a33a7b91a6cbebb9bb40890cd7f7f7229}} 
+bool {\bfseries gen\+Starter\+Budget} (int, std\+::vector$<$ int $>$)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ab6d7606a55061ae05f056828ce0ba64e}\label{classBudgetMeModel_ab6d7606a55061ae05f056828ce0ba64e}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Budget} (Budget\+Me\+::\+Time\+Period)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ae904412e048231f215f5d9203a9ed2c6}\label{classBudgetMeModel_ae904412e048231f215f5d9203a9ed2c6}} 
+bool {\bfseries add\+Transaction} (Q\+String, int, Q\+Date, int)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ac408223feece684a50d6e572b539762e}\label{classBudgetMeModel_ac408223feece684a50d6e572b539762e}} 
+void {\bfseries gen\+Preview\+Budget} (Q\+String, int, Q\+Date, int)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ace9af42599482057e833fe14c810d432}\label{classBudgetMeModel_ace9af42599482057e833fe14c810d432}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Preview\+Budget} (Budget\+Me\+::\+Time\+Period)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a22eff7a354e5f13b7864d5412ebecb4e}\label{classBudgetMeModel_a22eff7a354e5f13b7864d5412ebecb4e}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Local\+Spending} (Budget\+Me\+::\+Time\+Period)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a85e6e4f5f69a9e5d0e4bd98bf569657a}\label{classBudgetMeModel_a85e6e4f5f69a9e5d0e4bd98bf569657a}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Server\+Spending} (Budget\+Me\+::\+Time\+Period)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a0b1139a13fa4cf91b506198fbb11a1a5}\label{classBudgetMeModel_a0b1139a13fa4cf91b506198fbb11a1a5}} 
+std\+::vector$<$ struct \mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{Local\+Storage\+Manager\+::transaction\+Info}} $>$ {\bfseries get\+Transactions} (Q\+Date, Q\+Date)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ad2e69b0d1b052277155e77d7920bb14d}\label{classBudgetMeModel_ad2e69b0d1b052277155e77d7920bb14d}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Act\+Spend\+Per\+Cat} (Q\+Date, Q\+Date)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_adb2a78d52e44fcfd78255cd69fe4bb1e}\label{classBudgetMeModel_adb2a78d52e44fcfd78255cd69fe4bb1e}} 
+std\+::vector$<$ int $>$ {\bfseries get\+Act\+Spend\+Per\+Day} (Q\+Date, Q\+Date)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a5d6a039aa56f6fa0d311d79bf967fd99}\label{classBudgetMeModel_a5d6a039aa56f6fa0d311d79bf967fd99}} 
+std\+::vector$<$ int $>$ {\bfseries scale\+Down} (std\+::vector$<$ int $>$, int)
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a52e3a5d714a5a87a7d5fe3c76369710c}\label{classBudgetMeModel_a52e3a5d714a5a87a7d5fe3c76369710c}} 
+std\+::vector$<$ int $>$ {\bfseries scale\+Up} (std\+::vector$<$ int $>$, int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ababfa751c246473e49536ba2773de244}\label{classBudgetMeModel_ababfa751c246473e49536ba2773de244}} 
+\mbox{\hyperlink{classLocalStorageManager}{Local\+Storage\+Manager}} $\ast$ {\bfseries m\+\_\+storage\+Manager}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_aec31e9a73df1e5eb03a97454e0d74955}\label{classBudgetMeModel_aec31e9a73df1e5eb03a97454e0d74955}} 
+\mbox{\hyperlink{classBudgetMeDataManager}{Budget\+Me\+Data\+Manager}} $\ast$ {\bfseries m\+\_\+stats\+Manager}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ac0b1f3465d97252c0585c4dc1cbff4ef}\label{classBudgetMeModel_ac0b1f3465d97252c0585c4dc1cbff4ef}} 
+\mbox{\hyperlink{classBudgetManager}{Budget\+Manager}} $\ast$ {\bfseries m\+\_\+budget\+Manager}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a6c9e19015efce02cdac838b40572cecb}\label{classBudgetMeModel_a6c9e19015efce02cdac838b40572cecb}} 
+\mbox{\hyperlink{classPreferencesModel}{Preferences\+Model}} $\ast$ {\bfseries m\+\_\+pref\+Model}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ac5d8b81256cbc0068f60b6968c59bf90}\label{classBudgetMeModel_ac5d8b81256cbc0068f60b6968c59bf90}} 
+int {\bfseries m\+\_\+income}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a2b5fb351852f523877bcb7dfda04b986}\label{classBudgetMeModel_a2b5fb351852f523877bcb7dfda04b986}} 
+int {\bfseries m\+\_\+avg\+Income}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ad591994d63a730cc7e883ad2d647e70c}\label{classBudgetMeModel_ad591994d63a730cc7e883ad2d647e70c}} 
+std\+::vector$<$ Q\+String $>$ {\bfseries m\+\_\+cat\+Names}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ae02ffa9e1704a1e066915d551ab97cb7}\label{classBudgetMeModel_ae02ffa9e1704a1e066915d551ab97cb7}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+est\+Spending}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a9e07d7b91a999f021fb372c5d0540161}\label{classBudgetMeModel_a9e07d7b91a999f021fb372c5d0540161}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+avg\+Spending}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_af55ea8e14aaa937bcfad90dd635d7e9c}\label{classBudgetMeModel_af55ea8e14aaa937bcfad90dd635d7e9c}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+budget}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_ada11272b3400714c56ca3d8a964519b2}\label{classBudgetMeModel_ada11272b3400714c56ca3d8a964519b2}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+preview\+Budget}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_aaff19c6363a5f248da675ef2e4932c91}\label{classBudgetMeModel_aaff19c6363a5f248da675ef2e4932c91}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+local\+Spending}
+\item 
+\mbox{\Hypertarget{classBudgetMeModel_a5a54e3543bf93bddf65bd10ec3b71f85}\label{classBudgetMeModel_a5a54e3543bf93bddf65bd10ec3b71f85}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+server\+Spending}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+budgetmemodel.\+h\item 
+budgetmemodel.\+cpp\end{DoxyCompactItemize}

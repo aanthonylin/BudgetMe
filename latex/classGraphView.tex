@@ -1,0 +1,87 @@
+\hypertarget{classGraphView}{}\doxysection{Graph\+View Class Reference}
+\label{classGraphView}\index{GraphView@{GraphView}}
+
+
+{\ttfamily \#include $<$Graph\+View.\+h$>$}
+
+
+
+Inheritance diagram for Graph\+View\+:
+% FIG 0
+
+
+Collaboration diagram for Graph\+View\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraphView_a73b7deb89a418e443b552dcadd74df86}\label{classGraphView_a73b7deb89a418e443b552dcadd74df86}} 
+enum {\bfseries Graphs} \{ {\bfseries Bar}, 
+{\bfseries Pie}, 
+{\bfseries Scatter}, 
+{\bfseries Report}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraphView_ab39a0d84ac825ab78c0867f77bc924f4}\label{classGraphView_ab39a0d84ac825ab78c0867f77bc924f4}} 
+{\bfseries Graph\+View} (\mbox{\hyperlink{classGraphModel}{Graph\+Model}} $\ast$, Q\+String)
+\item 
+\mbox{\Hypertarget{classGraphView_a1546f1bae9d86768ce1d0c21b4143946}\label{classGraphView_a1546f1bae9d86768ce1d0c21b4143946}} 
+void {\bfseries show\+Bar} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a474e29704c70df0ec2288ef4d0f3e2f9}\label{classGraphView_a474e29704c70df0ec2288ef4d0f3e2f9}} 
+void {\bfseries show\+Pie} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a92cd1529ef3a53e9d002d1f81c8b8718}\label{classGraphView_a92cd1529ef3a53e9d002d1f81c8b8718}} 
+void {\bfseries show\+Line} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a2192a748e90fb819725aa3799556f234}\label{classGraphView_a2192a748e90fb819725aa3799556f234}} 
+void {\bfseries show\+Report} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a19be15b9b84658869b3bbee65633a5c5}\label{classGraphView_a19be15b9b84658869b3bbee65633a5c5}} 
+void {\bfseries show\+Scatter} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a9189d09e1494f8f97e9ce3ba5fa97033}\label{classGraphView_a9189d09e1494f8f97e9ce3ba5fa97033}} 
+void {\bfseries show\+Weekly} ()
+\item 
+\mbox{\Hypertarget{classGraphView_aeea047ab9dfd9b6a06eedde77c9e31cb}\label{classGraphView_aeea047ab9dfd9b6a06eedde77c9e31cb}} 
+void {\bfseries show\+Monthly} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a9becb4fbbbc337d33dd4ce134642fa28}\label{classGraphView_a9becb4fbbbc337d33dd4ce134642fa28}} 
+void {\bfseries show\+Quarterly} ()
+\item 
+\mbox{\Hypertarget{classGraphView_ae6c2fe24c21554107b10550f26b7f8dd}\label{classGraphView_ae6c2fe24c21554107b10550f26b7f8dd}} 
+void {\bfseries show\+Yearly} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraphView_a8e4be3130856b8c9992df398b61ef17d}\label{classGraphView_a8e4be3130856b8c9992df398b61ef17d}} 
+void {\bfseries refresh\+Graphs} ()
+\item 
+\mbox{\Hypertarget{classGraphView_a999a4fdf0226fa29058a8fc93ded569e}\label{classGraphView_a999a4fdf0226fa29058a8fc93ded569e}} 
+void {\bfseries clear\+Graphs} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraphView_abc31715ce0a4377bf9e6a80bdbe0c8b7}\label{classGraphView_abc31715ce0a4377bf9e6a80bdbe0c8b7}} 
+\mbox{\hyperlink{classGraphModel}{Graph\+Model}} $\ast$ {\bfseries model}
+\item 
+\mbox{\Hypertarget{classGraphView_a890b62059825f6a42686caa40b17143b}\label{classGraphView_a890b62059825f6a42686caa40b17143b}} 
+Q\+H\+Box\+Layout $\ast$ {\bfseries graph\+Layout}
+\item 
+\mbox{\Hypertarget{classGraphView_ab743e2fd27316f0202e2f1b3d88fb2ee}\label{classGraphView_ab743e2fd27316f0202e2f1b3d88fb2ee}} 
+Graphs {\bfseries current\+Graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGraphView}{Graph\+View}} class is used to display the data by retrieving the series and then creating the graphs. @\+Author\+: Hazem Sabsabi @\+Date 08/11/2021 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph\+View.\+h\item 
+Graph\+View.\+cpp\end{DoxyCompactItemize}

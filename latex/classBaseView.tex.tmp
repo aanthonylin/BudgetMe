@@ -1,0 +1,46 @@
+\hypertarget{classBaseView}{}\doxysection{Base\+View Class Reference}
+\label{classBaseView}\index{BaseView@{BaseView}}
+
+
+Inheritance diagram for Base\+View\+:
+% FIG 0
+
+
+Collaboration diagram for Base\+View\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBaseView_ad84e3c3eb57f0a366c4743c4862db145}\label{classBaseView_ad84e3c3eb57f0a366c4743c4862db145}} 
+{\bfseries Base\+View} (Q\+String)
+\item 
+\mbox{\Hypertarget{classBaseView_a10556e6525860c362ea129eed2d47c6c}\label{classBaseView_a10556e6525860c362ea129eed2d47c6c}} 
+void {\bfseries add\+To\+View} (Q\+Widget $\ast$)
+\item 
+\mbox{\Hypertarget{classBaseView_a68a86ba10dc9547612449a122935dc54}\label{classBaseView_a68a86ba10dc9547612449a122935dc54}} 
+void {\bfseries remove\+From\+View} (Q\+Widget $\ast$)
+\item 
+\mbox{\Hypertarget{classBaseView_a2658b1816996ca55f422ab8d267b4d0a}\label{classBaseView_a2658b1816996ca55f422ab8d267b4d0a}} 
+void {\bfseries add\+To\+View} (Q\+Layout $\ast$)
+\item 
+\mbox{\Hypertarget{classBaseView_a3bb76010e64daa817c30ff97b5ffe052}\label{classBaseView_a3bb76010e64daa817c30ff97b5ffe052}} 
+void {\bfseries add\+To\+Footer} (Q\+Widget $\ast$)
+\item 
+\mbox{\Hypertarget{classBaseView_a9f95dcf0364d393ab21f8683dc411954}\label{classBaseView_a9f95dcf0364d393ab21f8683dc411954}} 
+void {\bfseries add\+To\+Footer} (Q\+Layout $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBaseView_a98664deba4e91064feba143d66d15d4e}\label{classBaseView_a98664deba4e91064feba143d66d15d4e}} 
+Q\+V\+Box\+Layout $\ast$ {\bfseries m\+\_\+outer}
+\item 
+\mbox{\Hypertarget{classBaseView_a6c1ef9db677f5e580df54390d553aa81}\label{classBaseView_a6c1ef9db677f5e580df54390d553aa81}} 
+Q\+V\+Box\+Layout $\ast$ {\bfseries m\+\_\+center}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+baseview.\+h\item 
+baseview.\+cpp\end{DoxyCompactItemize}

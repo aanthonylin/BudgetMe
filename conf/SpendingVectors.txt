@@ -1,0 +1,18 @@
+54325508;Total; Total Expenditure
+54325510;Food; Food expenditure
+54325513;Shelter; Shelter
+54325519;Hydro; Household operations	
+54325521;Furniture; Household furnishings and equipment	
+54325525;Clothes; Clothing and accessories	
+54325530;Transportation; Transportation
+54325533;Healthcare; Health care	
+54325536;Personal care; Personal care	
+54325537;Recreation; Recreation	
+54325542;Education; Education
+54325543;Print; Reading materials and other printed matter
+1234863689;Regulated Substances; Tobacco products, alcoholic beverages and cannabis for non-medical use	
+54325545;Gambling; Games of chance
+54325546;Miscellaneous; Miscellaneous expenditures	
+54325547;Tax; Income taxes
+54325548;Insurance; Personal insurance payments and pension contributions	
+54325549;Donations; Gifts of money, support payments and charitable contributions	

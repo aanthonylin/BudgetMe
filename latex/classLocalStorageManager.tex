@@ -1,0 +1,633 @@
+\hypertarget{classLocalStorageManager}{}\doxysection{Local\+Storage\+Manager Class Reference}
+\label{classLocalStorageManager}\index{LocalStorageManager@{LocalStorageManager}}
+
+
+Interface for database models.  
+
+
+
+
+{\ttfamily \#include $<$Local\+Storage\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Local\+Storage\+Manager\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{transaction\+Info}}
+\begin{DoxyCompactList}\small\item\em A struct for grouping the transaction information of the current user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLocalStorageManager_aa996422b1a31ae7b35d072d19b22af8d}{$\sim$\+Local\+Storage\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em A virtual destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLocalStorageManager_a4c9a3ffa2543ec6621cf35ad9b6f8ee6}{is\+Stats\+Can\+Data\+Saved}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for verifying Stats\+Can data availability. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLocalStorageManager_aaa1a88960bda7a34271b6ed495bc13bc}{is\+User\+Data\+Saved}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for verifying user data availability. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a54173cf98b6e28f70759d60d1b95e112}{set\+Stats\+Can\+Data\+Saved}} (bool)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting Stats\+Can data availability. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_adfdd5c2a75bdd04d8055f331fe6f8cbb}{set\+User\+Data\+Saved}} (bool)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting user data availability. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_aaef8414dcf46b53213b606af81bb41b5}{set\+Average\+Annual\+Income}} (int)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the average annual income of Canadian from Stats\+Can. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classLocalStorageManager_a923d71e94b7d426dc2e763e2c6e7138e}{get\+Average\+Annual\+Income}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the average annual income of Canadian from Stats\+Can. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a194cce5e917e76c1ff455d3de5f47657}{set\+Category\+Names}} (std\+::vector$<$ Q\+String $>$)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the catogories from Stats\+Can. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ Q\+String $>$ \mbox{\hyperlink{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}{get\+Category\+Names}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the catogories from Stats\+Can. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_af87818b865b634e807f37282de9ccc5c}{set\+Average\+Canadian\+Spending}} (std\+::vector$<$ int $>$)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the average Canadian spending from Stats\+Can. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classLocalStorageManager_a2247dc09ae8aca2ecd709ad161f7f339}{get\+Average\+Canadian\+Spending}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the average Canadian spending from Stats\+Can. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_adef98fb4c0f3f41044cf4577c4d90eff}{set\+User\+Annual\+Income}} (int)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the average annual income of user. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classLocalStorageManager_af657b71bb0e98267b95bb53ceea90fe5}{get\+User\+Annual\+Income}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the average annual income of user. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a6cc3c8cd75e9686eb08656a33660a978}{set\+Estimated\+Spending}} (std\+::vector$<$ int $>$)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the estimated spending of user. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classLocalStorageManager_adeb67c323e5f279d8183b9ca0b860203}{get\+Estimated\+Spending}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the estimated spending of user. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_afc74cb2b85216701a08c2552566d1498}{set\+User\+Budget}} (std\+::vector$<$ int $>$)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the budget of user. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classLocalStorageManager_a4211461f728fcfcc0dc9ce662af95c9b}{get\+User\+Budget}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the budget of user. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_ad8d170cd275271ada55b2ee1dd75da7f}{set\+Smart\+Budget}} (bool)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the smart budget. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLocalStorageManager_a7c8d3eaf88e56e45746b943317f9d10c}{get\+Smart\+Budget}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the smart budget. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_aa9717e857eff2ca8d28ee207e8dd7d0a}{set\+Warnings}} (bool)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the overspending warnings. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLocalStorageManager_a1db14b3bece18564f047a94e83352959}{get\+Warnings}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the overspending warnings. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a280100aa425369ef0ced2c7f5d76de09}{set\+Data\+Sharing}} (bool)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the data sharing feature. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLocalStorageManager_a055c36f0a6c050d8838756be34016965}{get\+Data\+Sharing}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the data sharing feature. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a7d82db7bad21f133b65f31072d8011b4}{set\+Preferences\+Saved}} (bool)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for setting the preference feature. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLocalStorageManager_a0392d3741513c8a5e7d7cd41cf19998e}{are\+Preferences\+Saved}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the preference feature. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a3dc6b2e75c9bb31ec341fa2cef3d41d0}{save\+Transaction}} (\mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{transaction\+Info}})=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for saving a transaction. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{transaction\+Info}} $>$ \mbox{\hyperlink{classLocalStorageManager_af76feba56125d2ab93d7e1e0ed179ce0}{get\+Transactions}} (Q\+Date, Q\+Date)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting transactions. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classLocalStorageManager_ad46198a69cd69c9d58c195ff336354b2}{get\+Actual\+Spending}} (Q\+Date, Q\+Date)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the actual spending. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classLocalStorageManager_a88509fb862d7558d5fc71da648e5fcb7}{get\+Daily\+Spending}} (Q\+Date, Q\+Date)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for getting the daily spending. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLocalStorageManager_a21a12bba51cef58d019b30f98803f423}{clear\+All\+Data}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for clearing the application database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for database models. 
+
+\begin{DoxyAuthor}{Author}
+Brian Au Interface for accessing the application\textquotesingle{}s database. Provide the interface for data reteieval and storage methods. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLocalStorageManager_aa996422b1a31ae7b35d072d19b22af8d}\label{classLocalStorageManager_aa996422b1a31ae7b35d072d19b22af8d}} 
+\index{LocalStorageManager@{LocalStorageManager}!````~LocalStorageManager@{$\sim$LocalStorageManager}}
+\index{````~LocalStorageManager@{$\sim$LocalStorageManager}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$LocalStorageManager()}{~LocalStorageManager()}}
+{\footnotesize\ttfamily virtual Local\+Storage\+Manager\+::$\sim$\+Local\+Storage\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A virtual destructor. 
+
+A virtual destructor for \mbox{\hyperlink{classLocalStorageManager}{Local\+Storage\+Manager}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLocalStorageManager_a0392d3741513c8a5e7d7cd41cf19998e}\label{classLocalStorageManager_a0392d3741513c8a5e7d7cd41cf19998e}} 
+\index{LocalStorageManager@{LocalStorageManager}!arePreferencesSaved@{arePreferencesSaved}}
+\index{arePreferencesSaved@{arePreferencesSaved}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{arePreferencesSaved()}{arePreferencesSaved()}}
+{\footnotesize\ttfamily virtual bool Local\+Storage\+Manager\+::are\+Preferences\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the preference feature. 
+
+A pure virtual method for getting the preference feature of current user from the application database. \begin{DoxyReturn}{Returns}
+preference feature status in boolean. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a5def1ae201fc91a6947f8cc242f7fa85}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a21a12bba51cef58d019b30f98803f423}\label{classLocalStorageManager_a21a12bba51cef58d019b30f98803f423}} 
+\index{LocalStorageManager@{LocalStorageManager}!clearAllData@{clearAllData}}
+\index{clearAllData@{clearAllData}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{clearAllData()}{clearAllData()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::clear\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for clearing the application database. 
+
+A pure virtual method for clearing the application completely. 
+
+Implemented in \mbox{\hyperlink{classSQLManager_a8d0abdcccb063a53569e785b6ee4ed5f}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_ad46198a69cd69c9d58c195ff336354b2}\label{classLocalStorageManager_ad46198a69cd69c9d58c195ff336354b2}} 
+\index{LocalStorageManager@{LocalStorageManager}!getActualSpending@{getActualSpending}}
+\index{getActualSpending@{getActualSpending}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getActualSpending()}{getActualSpending()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ Local\+Storage\+Manager\+::get\+Actual\+Spending (\begin{DoxyParamCaption}\item[{Q\+Date}]{,  }\item[{Q\+Date}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the actual spending. 
+
+A pure virtual method for getting the actual spending per categories derived fromn transaction history of current user between 2 specified date in the parameter from the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & bound date. \\
+\hline
+{\em upper} & bound date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of total spending per categories. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a84a0ee4bc8c20233755e354f6f047d11}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a923d71e94b7d426dc2e763e2c6e7138e}\label{classLocalStorageManager_a923d71e94b7d426dc2e763e2c6e7138e}} 
+\index{LocalStorageManager@{LocalStorageManager}!getAverageAnnualIncome@{getAverageAnnualIncome}}
+\index{getAverageAnnualIncome@{getAverageAnnualIncome}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getAverageAnnualIncome()}{getAverageAnnualIncome()}}
+{\footnotesize\ttfamily virtual int Local\+Storage\+Manager\+::get\+Average\+Annual\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the average annual income of Canadian from Stats\+Can. 
+
+A pure virtual method for getting the average annual income of Canadian from Stats\+Can in the application database. \begin{DoxyReturn}{Returns}
+the average annual income of Canadian in int. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a62eda7207e4058efdc4ef5403b3d17d1}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a2247dc09ae8aca2ecd709ad161f7f339}\label{classLocalStorageManager_a2247dc09ae8aca2ecd709ad161f7f339}} 
+\index{LocalStorageManager@{LocalStorageManager}!getAverageCanadianSpending@{getAverageCanadianSpending}}
+\index{getAverageCanadianSpending@{getAverageCanadianSpending}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getAverageCanadianSpending()}{getAverageCanadianSpending()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ Local\+Storage\+Manager\+::get\+Average\+Canadian\+Spending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the average Canadian spending from Stats\+Can. 
+
+A pure virtual method for getting the average Canadian spending from Stats\+Can in the application database. \begin{DoxyReturn}{Returns}
+the list of spending in vector$<$int$>$. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a8bede2ceafa8c51185ca9ce79a265637}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}\label{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}} 
+\index{LocalStorageManager@{LocalStorageManager}!getCategoryNames@{getCategoryNames}}
+\index{getCategoryNames@{getCategoryNames}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getCategoryNames()}{getCategoryNames()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$Q\+String$>$ Local\+Storage\+Manager\+::get\+Category\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the catogories from Stats\+Can. 
+
+A pure virtual method for getting the catogories from Stats\+Can in the application database. \begin{DoxyReturn}{Returns}
+the list of categories in vector$<$\+Q\+String$>$. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_acec5f77e10c9d2fc591de4810605c370}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a88509fb862d7558d5fc71da648e5fcb7}\label{classLocalStorageManager_a88509fb862d7558d5fc71da648e5fcb7}} 
+\index{LocalStorageManager@{LocalStorageManager}!getDailySpending@{getDailySpending}}
+\index{getDailySpending@{getDailySpending}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getDailySpending()}{getDailySpending()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ Local\+Storage\+Manager\+::get\+Daily\+Spending (\begin{DoxyParamCaption}\item[{Q\+Date}]{,  }\item[{Q\+Date}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the daily spending. 
+
+A pure virtual method for getting the total daily spending derived fromn transaction history of current user between 2 specified date in the parameter from the application database. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & bound date. \\
+\hline
+{\em upper} & bound date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of spending per day. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a5991a1f3bb671fda75eba299a01bcec1}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a055c36f0a6c050d8838756be34016965}\label{classLocalStorageManager_a055c36f0a6c050d8838756be34016965}} 
+\index{LocalStorageManager@{LocalStorageManager}!getDataSharing@{getDataSharing}}
+\index{getDataSharing@{getDataSharing}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getDataSharing()}{getDataSharing()}}
+{\footnotesize\ttfamily virtual bool Local\+Storage\+Manager\+::get\+Data\+Sharing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the data sharing feature. 
+
+A pure virtual method for getting the data sharing feature of current user from the application database. \begin{DoxyReturn}{Returns}
+data sharing feature status in boolean. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a56de8532e9cf62ff865ebb5a13a30dca}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_adeb67c323e5f279d8183b9ca0b860203}\label{classLocalStorageManager_adeb67c323e5f279d8183b9ca0b860203}} 
+\index{LocalStorageManager@{LocalStorageManager}!getEstimatedSpending@{getEstimatedSpending}}
+\index{getEstimatedSpending@{getEstimatedSpending}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getEstimatedSpending()}{getEstimatedSpending()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ Local\+Storage\+Manager\+::get\+Estimated\+Spending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the estimated spending of user. 
+
+A pure virtual method for getting the estimated spending of current user from the application database. \begin{DoxyReturn}{Returns}
+the list of spending in vector$<$int$>$. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a4d063dbd18984a97fe2a83378efb95e3}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a7c8d3eaf88e56e45746b943317f9d10c}\label{classLocalStorageManager_a7c8d3eaf88e56e45746b943317f9d10c}} 
+\index{LocalStorageManager@{LocalStorageManager}!getSmartBudget@{getSmartBudget}}
+\index{getSmartBudget@{getSmartBudget}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getSmartBudget()}{getSmartBudget()}}
+{\footnotesize\ttfamily virtual bool Local\+Storage\+Manager\+::get\+Smart\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the smart budget. 
+
+A pure virtual method for getting the smart budget feature of current user from the application database. \begin{DoxyReturn}{Returns}
+smart budget status in boolean. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a7cfb3292bc22ebf9e81111c67814d6e0}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_af76feba56125d2ab93d7e1e0ed179ce0}\label{classLocalStorageManager_af76feba56125d2ab93d7e1e0ed179ce0}} 
+\index{LocalStorageManager@{LocalStorageManager}!getTransactions@{getTransactions}}
+\index{getTransactions@{getTransactions}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getTransactions()}{getTransactions()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{transaction\+Info}}$>$ Local\+Storage\+Manager\+::get\+Transactions (\begin{DoxyParamCaption}\item[{Q\+Date}]{,  }\item[{Q\+Date}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting transactions. 
+
+A pure virtual method for getting the transactions of current user between 2 specified date in the parameter from the application database. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & bound date. \\
+\hline
+{\em upper} & bound date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of transaction. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ad80f6668109296ea420cdb5492b177d3}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_af657b71bb0e98267b95bb53ceea90fe5}\label{classLocalStorageManager_af657b71bb0e98267b95bb53ceea90fe5}} 
+\index{LocalStorageManager@{LocalStorageManager}!getUserAnnualIncome@{getUserAnnualIncome}}
+\index{getUserAnnualIncome@{getUserAnnualIncome}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getUserAnnualIncome()}{getUserAnnualIncome()}}
+{\footnotesize\ttfamily virtual int Local\+Storage\+Manager\+::get\+User\+Annual\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the average annual income of user. 
+
+A pure virtual method for getting the average annual income of current user from the application database. \begin{DoxyReturn}{Returns}
+the average annual income of user in int. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a8cdb54546f505cd832151140606831b7}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a4211461f728fcfcc0dc9ce662af95c9b}\label{classLocalStorageManager_a4211461f728fcfcc0dc9ce662af95c9b}} 
+\index{LocalStorageManager@{LocalStorageManager}!getUserBudget@{getUserBudget}}
+\index{getUserBudget@{getUserBudget}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getUserBudget()}{getUserBudget()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ Local\+Storage\+Manager\+::get\+User\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the budget of user. 
+
+A pure virtual method for getting the budget of current user from the application database. \begin{DoxyReturn}{Returns}
+the list of spending in vector$<$int$>$. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a8335132c4093555c7513b152cb4d78a7}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a1db14b3bece18564f047a94e83352959}\label{classLocalStorageManager_a1db14b3bece18564f047a94e83352959}} 
+\index{LocalStorageManager@{LocalStorageManager}!getWarnings@{getWarnings}}
+\index{getWarnings@{getWarnings}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{getWarnings()}{getWarnings()}}
+{\footnotesize\ttfamily virtual bool Local\+Storage\+Manager\+::get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for getting the overspending warnings. 
+
+A pure virtual method for getting the overspending warnings of current user from the application database. \begin{DoxyReturn}{Returns}
+overspending warnings status in boolean. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a028d7afbed4fe62cbb4f7d746c0c42b0}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a4c9a3ffa2543ec6621cf35ad9b6f8ee6}\label{classLocalStorageManager_a4c9a3ffa2543ec6621cf35ad9b6f8ee6}} 
+\index{LocalStorageManager@{LocalStorageManager}!isStatsCanDataSaved@{isStatsCanDataSaved}}
+\index{isStatsCanDataSaved@{isStatsCanDataSaved}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{isStatsCanDataSaved()}{isStatsCanDataSaved()}}
+{\footnotesize\ttfamily virtual bool Local\+Storage\+Manager\+::is\+Stats\+Can\+Data\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for verifying Stats\+Can data availability. 
+
+A pure virtual method for checking if the data of the Statistic Canada is stored in the application\textquotesingle{}s database. \begin{DoxyReturn}{Returns}
+the availability of Stats\+Can data in boolean. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a7f7d0a00141d0237c95074002924fcfd}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_aaa1a88960bda7a34271b6ed495bc13bc}\label{classLocalStorageManager_aaa1a88960bda7a34271b6ed495bc13bc}} 
+\index{LocalStorageManager@{LocalStorageManager}!isUserDataSaved@{isUserDataSaved}}
+\index{isUserDataSaved@{isUserDataSaved}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{isUserDataSaved()}{isUserDataSaved()}}
+{\footnotesize\ttfamily virtual bool Local\+Storage\+Manager\+::is\+User\+Data\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for verifying user data availability. 
+
+A pure virtual method for checking if the data of the current application user is stored in the application\textquotesingle{}s database. \begin{DoxyReturn}{Returns}
+the availability of user data in boolean. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ac3bee9c05544b571705e647d556acb0f}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a3dc6b2e75c9bb31ec341fa2cef3d41d0}\label{classLocalStorageManager_a3dc6b2e75c9bb31ec341fa2cef3d41d0}} 
+\index{LocalStorageManager@{LocalStorageManager}!saveTransaction@{saveTransaction}}
+\index{saveTransaction@{saveTransaction}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{saveTransaction()}{saveTransaction()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::save\+Transaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{transaction\+Info}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for saving a transaction. 
+
+A pure virtual method for saving a transaction of current user to the application database. 
+\begin{DoxyParams}{Parameters}
+{\em a} & transaction information. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a00e7781ccc713a61783689e1f9e9be64}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_aaef8414dcf46b53213b606af81bb41b5}\label{classLocalStorageManager_aaef8414dcf46b53213b606af81bb41b5}} 
+\index{LocalStorageManager@{LocalStorageManager}!setAverageAnnualIncome@{setAverageAnnualIncome}}
+\index{setAverageAnnualIncome@{setAverageAnnualIncome}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setAverageAnnualIncome()}{setAverageAnnualIncome()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Average\+Annual\+Income (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the average annual income of Canadian from Stats\+Can. 
+
+A pure virtual method for storing the average annual income of Canadian from Stats\+Can in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & average annual income of Canadian in int. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ad7359d3aadb9deb2294c6dbf42c6496a}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_af87818b865b634e807f37282de9ccc5c}\label{classLocalStorageManager_af87818b865b634e807f37282de9ccc5c}} 
+\index{LocalStorageManager@{LocalStorageManager}!setAverageCanadianSpending@{setAverageCanadianSpending}}
+\index{setAverageCanadianSpending@{setAverageCanadianSpending}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setAverageCanadianSpending()}{setAverageCanadianSpending()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Average\+Canadian\+Spending (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the average Canadian spending from Stats\+Can. 
+
+A pure virtual method for stroing the average Canadian spending from Stats\+Can in the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of spending in vector$<$int$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLocalStorageManager_a194cce5e917e76c1ff455d3de5f47657}\label{classLocalStorageManager_a194cce5e917e76c1ff455d3de5f47657}} 
+\index{LocalStorageManager@{LocalStorageManager}!setCategoryNames@{setCategoryNames}}
+\index{setCategoryNames@{setCategoryNames}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setCategoryNames()}{setCategoryNames()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Category\+Names (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Q\+String $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the catogories from Stats\+Can. 
+
+A pure virtual method for stroing the catogories from Stats\+Can in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of categories in vector$<$\+Q\+String$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLocalStorageManager_a280100aa425369ef0ced2c7f5d76de09}\label{classLocalStorageManager_a280100aa425369ef0ced2c7f5d76de09}} 
+\index{LocalStorageManager@{LocalStorageManager}!setDataSharing@{setDataSharing}}
+\index{setDataSharing@{setDataSharing}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setDataSharing()}{setDataSharing()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Data\+Sharing (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the data sharing feature. 
+
+A pure virtual method for setting the data sharing feature of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em data} & sharing feature status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ae78956980d101a9bcadc7a425bb46d4c}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a6cc3c8cd75e9686eb08656a33660a978}\label{classLocalStorageManager_a6cc3c8cd75e9686eb08656a33660a978}} 
+\index{LocalStorageManager@{LocalStorageManager}!setEstimatedSpending@{setEstimatedSpending}}
+\index{setEstimatedSpending@{setEstimatedSpending}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setEstimatedSpending()}{setEstimatedSpending()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Estimated\+Spending (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the estimated spending of user. 
+
+A pure virtual method for setting the estimated spending of current user in the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of spending in vector$<$int$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLocalStorageManager_a7d82db7bad21f133b65f31072d8011b4}\label{classLocalStorageManager_a7d82db7bad21f133b65f31072d8011b4}} 
+\index{LocalStorageManager@{LocalStorageManager}!setPreferencesSaved@{setPreferencesSaved}}
+\index{setPreferencesSaved@{setPreferencesSaved}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setPreferencesSaved()}{setPreferencesSaved()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Preferences\+Saved (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the preference feature. 
+
+A pure virtual method for setting the preference feature of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em preference} & feature status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a1c19c3ce24ea123b3e273b700eca0ec4}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_ad8d170cd275271ada55b2ee1dd75da7f}\label{classLocalStorageManager_ad8d170cd275271ada55b2ee1dd75da7f}} 
+\index{LocalStorageManager@{LocalStorageManager}!setSmartBudget@{setSmartBudget}}
+\index{setSmartBudget@{setSmartBudget}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setSmartBudget()}{setSmartBudget()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Smart\+Budget (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the smart budget. 
+
+A pure virtual method for setting the smart budget feature of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em smart} & budget status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a453b14847e4604098aa35fb0c2c1f3d4}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_a54173cf98b6e28f70759d60d1b95e112}\label{classLocalStorageManager_a54173cf98b6e28f70759d60d1b95e112}} 
+\index{LocalStorageManager@{LocalStorageManager}!setStatsCanDataSaved@{setStatsCanDataSaved}}
+\index{setStatsCanDataSaved@{setStatsCanDataSaved}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setStatsCanDataSaved()}{setStatsCanDataSaved()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Stats\+Can\+Data\+Saved (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting Stats\+Can data availability. 
+
+A pure virtual method for setting if the data of the Statistic Canada is stored in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & availability of Stats\+Can data in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ab23d0b4d2344db9b05ff90f106a068a1}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_adef98fb4c0f3f41044cf4577c4d90eff}\label{classLocalStorageManager_adef98fb4c0f3f41044cf4577c4d90eff}} 
+\index{LocalStorageManager@{LocalStorageManager}!setUserAnnualIncome@{setUserAnnualIncome}}
+\index{setUserAnnualIncome@{setUserAnnualIncome}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setUserAnnualIncome()}{setUserAnnualIncome()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+User\+Annual\+Income (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the average annual income of user. 
+
+A pure virtual method for setting the average annual income of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & average annual income of user in int. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ab41fa9fed2aefb626bf22ed72c1d17c1}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_afc74cb2b85216701a08c2552566d1498}\label{classLocalStorageManager_afc74cb2b85216701a08c2552566d1498}} 
+\index{LocalStorageManager@{LocalStorageManager}!setUserBudget@{setUserBudget}}
+\index{setUserBudget@{setUserBudget}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setUserBudget()}{setUserBudget()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+User\+Budget (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the budget of user. 
+
+A pure virtual method for setting the budget of current user in the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of spending in vector$<$int$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLocalStorageManager_adfdd5c2a75bdd04d8055f331fe6f8cbb}\label{classLocalStorageManager_adfdd5c2a75bdd04d8055f331fe6f8cbb}} 
+\index{LocalStorageManager@{LocalStorageManager}!setUserDataSaved@{setUserDataSaved}}
+\index{setUserDataSaved@{setUserDataSaved}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setUserDataSaved()}{setUserDataSaved()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+User\+Data\+Saved (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting user data availability. 
+
+A pure virtual method for setting if the data of the current application user is stored in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & availability of user data in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a1a1d415f9914cc0c3d330350899fa9db}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLocalStorageManager_aa9717e857eff2ca8d28ee207e8dd7d0a}\label{classLocalStorageManager_aa9717e857eff2ca8d28ee207e8dd7d0a}} 
+\index{LocalStorageManager@{LocalStorageManager}!setWarnings@{setWarnings}}
+\index{setWarnings@{setWarnings}!LocalStorageManager@{LocalStorageManager}}
+\doxysubsubsection{\texorpdfstring{setWarnings()}{setWarnings()}}
+{\footnotesize\ttfamily virtual void Local\+Storage\+Manager\+::set\+Warnings (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for setting the overspending warnings. 
+
+A pure virtual method for setting the overspending warnings of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em overspending} & warnings status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_adc8012516b13daf47c8ba7f4402e6495}{S\+Q\+L\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Local\+Storage\+Manager.\+h\end{DoxyCompactItemize}

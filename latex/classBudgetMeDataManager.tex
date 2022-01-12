@@ -1,0 +1,150 @@
+\hypertarget{classBudgetMeDataManager}{}\doxysection{Budget\+Me\+Data\+Manager Class Reference}
+\label{classBudgetMeDataManager}\index{BudgetMeDataManager@{BudgetMeDataManager}}
+
+
+An object that will retrieve data specifically for Budget\+Me.  
+
+
+
+
+{\ttfamily \#include $<$Budget\+Me\+Data\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Budget\+Me\+Data\+Manager\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classBudgetMeDataManager_a987076b6facc54e742a594ee81b86420}{get\+Average\+Income}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves parsed income data. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classBudgetMeDataManager_a93f361c87d14fa1047bdad4dc3f647b7}{get\+Average\+Spending}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves parsed spending data. \end{DoxyCompactList}\item 
+std\+::vector$<$ Q\+String $>$ \mbox{\hyperlink{classBudgetMeDataManager_a1c412610d6e80d6ecd9768aab7416011}{get\+Category\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves parsed spending metadata. \end{DoxyCompactList}\item 
+std\+::vector$<$ Q\+String $>$ \mbox{\hyperlink{classBudgetMeDataManager_a0b8748773ad0037bfce74ce01862156b}{get\+Short\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves shorter names of the vector categories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBudgetMeDataManager_a58e6519e704a4381bdd75ebd65e14367}{set\+Data\+Defaults}} ()
+\begin{DoxyCompactList}\small\item\em Sets the parameters of the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} to be able to get data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudgetMeDataManager_a83f12600c3940f8a2517307f33fe27cb}{set\+Metadata\+Defaults}} ()
+\begin{DoxyCompactList}\small\item\em Sets the parameters of the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} to be able to get metadata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} \mbox{\hyperlink{classBudgetMeDataManager_a7afd9a47ac1ad69d050c29b47e47dca3}{request}}
+\begin{DoxyCompactList}\small\item\em An object that can make request to Statistics Canada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object that will retrieve data specifically for Budget\+Me. 
+
+It is an object with a specialized purpose. It retrieves data and meta data from Statistics Canada that will be required for Budget\+Me. The data returned will only work with Budget\+Me or any application that requires the same data. If a more general object is needed, use the Stats\+Canada\+Manager\+Object.
+
+\begin{DoxyAuthor}{Author}
+Anthony Lin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBudgetMeDataManager_a987076b6facc54e742a594ee81b86420}\label{classBudgetMeDataManager_a987076b6facc54e742a594ee81b86420}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!getAverageIncome@{getAverageIncome}}
+\index{getAverageIncome@{getAverageIncome}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{getAverageIncome()}{getAverageIncome()}}
+{\footnotesize\ttfamily int Budget\+Me\+Data\+Manager\+::get\+Average\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves parsed income data. 
+
+It calls the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} with the desired vector and it returns the value that the A\+PI returned.
+
+\begin{DoxyReturn}{Returns}
+An integer with the average income as the value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBudgetMeDataManager_a93f361c87d14fa1047bdad4dc3f647b7}\label{classBudgetMeDataManager_a93f361c87d14fa1047bdad4dc3f647b7}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!getAverageSpending@{getAverageSpending}}
+\index{getAverageSpending@{getAverageSpending}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{getAverageSpending()}{getAverageSpending()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Budget\+Me\+Data\+Manager\+::get\+Average\+Spending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves parsed spending data. 
+
+It calls the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} with the desired vectors and it returns the associated value that the A\+PI returned. Order of the returned vector matches the order of which the vectors are listed in the file
+
+\begin{DoxyReturn}{Returns}
+An vector of integers storing the associated values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBudgetMeDataManager_a1c412610d6e80d6ecd9768aab7416011}\label{classBudgetMeDataManager_a1c412610d6e80d6ecd9768aab7416011}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!getCategoryNames@{getCategoryNames}}
+\index{getCategoryNames@{getCategoryNames}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{getCategoryNames()}{getCategoryNames()}}
+{\footnotesize\ttfamily std\+::vector$<$ Q\+String $>$ Budget\+Me\+Data\+Manager\+::get\+Category\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves parsed spending metadata. 
+
+It calls the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} with the desired vectors and it returns the associated metadata that the A\+PI returned. Order of the returned vector matches the order of which the vectors are listed in the file
+
+\begin{DoxyReturn}{Returns}
+An vector of Q\+String storing the associated names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBudgetMeDataManager_a0b8748773ad0037bfce74ce01862156b}\label{classBudgetMeDataManager_a0b8748773ad0037bfce74ce01862156b}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!getShortNames@{getShortNames}}
+\index{getShortNames@{getShortNames}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{getShortNames()}{getShortNames()}}
+{\footnotesize\ttfamily std\+::vector$<$ Q\+String $>$ Budget\+Me\+Data\+Manager\+::get\+Short\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves shorter names of the vector categories. 
+
+It reads from the vector file and reads the shorter names. It then converts the shorter names into a Q\+String and stores them in a vector. The order in which the shorter names are stored matches the order of the file
+
+\begin{DoxyReturn}{Returns}
+An vector of Q\+Strings storing the associated values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBudgetMeDataManager_a58e6519e704a4381bdd75ebd65e14367}\label{classBudgetMeDataManager_a58e6519e704a4381bdd75ebd65e14367}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!setDataDefaults@{setDataDefaults}}
+\index{setDataDefaults@{setDataDefaults}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{setDataDefaults()}{setDataDefaults()}}
+{\footnotesize\ttfamily void Budget\+Me\+Data\+Manager\+::set\+Data\+Defaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the parameters of the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} to be able to get data. 
+
+It sends the sets the U\+RL of the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} allowing it to make request to retrieve the data from the source. It gets the source location from a \#define directive in the \textquotesingle{}\mbox{\hyperlink{BudgetMeDataManager_8h_source}{Budget\+Me\+Data\+Manager.\+h}}\textquotesingle{} file \mbox{\Hypertarget{classBudgetMeDataManager_a83f12600c3940f8a2517307f33fe27cb}\label{classBudgetMeDataManager_a83f12600c3940f8a2517307f33fe27cb}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!setMetadataDefaults@{setMetadataDefaults}}
+\index{setMetadataDefaults@{setMetadataDefaults}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{setMetadataDefaults()}{setMetadataDefaults()}}
+{\footnotesize\ttfamily void Budget\+Me\+Data\+Manager\+::set\+Metadata\+Defaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the parameters of the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} to be able to get metadata. 
+
+It sends the sets the U\+RL of the \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} allowing it to make request to retrieve the metadata from the source. It gets the source location from a \#define directive in the \textquotesingle{}\mbox{\hyperlink{BudgetMeDataManager_8h_source}{Budget\+Me\+Data\+Manager.\+h}}\textquotesingle{} file 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBudgetMeDataManager_a7afd9a47ac1ad69d050c29b47e47dca3}\label{classBudgetMeDataManager_a7afd9a47ac1ad69d050c29b47e47dca3}} 
+\index{BudgetMeDataManager@{BudgetMeDataManager}!request@{request}}
+\index{request@{request}!BudgetMeDataManager@{BudgetMeDataManager}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStatsCanadaManager}{Stats\+Canada\+Manager}} Budget\+Me\+Data\+Manager\+::request\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An object that can make request to Statistics Canada. 
+
+It is an object that makes request to Statsistics Canada and allows for data to be retrieved for Budget\+Me\textquotesingle{}s needs 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Budget\+Me\+Data\+Manager.\+h\item 
+Budget\+Me\+Data\+Manager.\+cpp\end{DoxyCompactItemize}

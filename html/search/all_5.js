@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['featuremodel_24',['FeatureModel',['../classFeatureModel.html',1,'']]],
+  ['filterdata_25',['filterData',['../classCompareAvgModel.html#ad2a18c3073511e2d8173b2f660a4076c',1,'CompareAvgModel::filterData()'],['../classCompareBudgetModel.html#a83eb2365e2049a3d71ce28d031774db7',1,'CompareBudgetModel::filterData()'],['../classCompareLocalModel.html#a7e1f7267321dbcd74d615102e3c5fc85',1,'CompareLocalModel::filterData()'],['../classComparePreviewModel.html#aa79181368e57451d7c484069c9f158d5',1,'ComparePreviewModel::filterData()'],['../classCompareServerModel.html#ab1df46167385522a3860f7eb9119843e',1,'CompareServerModel::filterData()'],['../classGraphModel.html#a7b59b8d66da894d4689c024ed34ca64f',1,'GraphModel::filterData()'],['../classSummaryBudgetModel.html#aef070291896a4350357c19fecf9b980e',1,'SummaryBudgetModel::filterData()'],['../classSummaryPreviewModel.html#aacba2b78b5ce182fd4efd79fcf106814',1,'SummaryPreviewModel::filterData()'],['../classSummarySpendingModel.html#aecf3505ef56d52fc6cb167b623de439b',1,'SummarySpendingModel::filterData()']]]
+];

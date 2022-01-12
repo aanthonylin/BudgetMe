@@ -1,0 +1,835 @@
+\hypertarget{classSQLManager}{}\doxysection{S\+Q\+L\+Manager Class Reference}
+\label{classSQLManager}\index{SQLManager@{SQLManager}}
+
+
+Database model for the application.  
+
+
+
+
+{\ttfamily \#include $<$S\+Q\+L\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for S\+Q\+L\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for S\+Q\+L\+Manager\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSQLManager_1_1connectionID}{connection\+ID}}
+\begin{DoxyCompactList}\small\item\em A private struct for grouping the database information required to access My\+S\+QL for the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSQLManager_aaf23cda554187a59feeec915ebbe4456}{S\+Q\+L\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSQLManager_a2a68b3eb43cbc83ca4e3192d67f3682f}{$\sim$\+S\+Q\+L\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_aa36ca8a3a314864183fbf0c77ac0afbe}{register\+Local}} (string, string)
+\begin{DoxyCompactList}\small\item\em A public method for adding a user ID to database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_ab2e9cedaafabac1d54ea83d8b12466d4}{login\+Local}} (string, string)
+\begin{DoxyCompactList}\small\item\em A public method for checking a user ID in database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a7f0181b868ad0a95bd4354012de8be74}{has\+Session}} ()
+\begin{DoxyCompactList}\small\item\em A public method for checking if a user has logged in. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSQLManager_adc7b65566a4d4b29ad4ff2de06b691ed}{get\+User}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the userid of the current session. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a883fc3aa59468e88094594f05df90124}{guest\+Session}} ()
+\begin{DoxyCompactList}\small\item\em A public method for checking if the session is in guess mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a7f7d0a00141d0237c95074002924fcfd}{is\+Stats\+Can\+Data\+Saved}} ()
+\begin{DoxyCompactList}\small\item\em A public method for verifying Stats\+Can data availability. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_ac3bee9c05544b571705e647d556acb0f}{is\+User\+Data\+Saved}} ()
+\begin{DoxyCompactList}\small\item\em A public method for verifying user data availability. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_ab23d0b4d2344db9b05ff90f106a068a1}{set\+Stats\+Can\+Data\+Saved}} (bool)
+\begin{DoxyCompactList}\small\item\em A public method for setting Stats\+Can data availability. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a1a1d415f9914cc0c3d330350899fa9db}{set\+User\+Data\+Saved}} (bool)
+\begin{DoxyCompactList}\small\item\em A public method for setting user data availability. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_ad7359d3aadb9deb2294c6dbf42c6496a}{set\+Average\+Annual\+Income}} (int)
+\begin{DoxyCompactList}\small\item\em A public method for setting the average annual income of Canadian from Stats\+Can. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSQLManager_a62eda7207e4058efdc4ef5403b3d17d1}{get\+Average\+Annual\+Income}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the average annual income of Canadian from Stats\+Can. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_ad5fc18049edbf49d53ad83399a86988c}{set\+Category\+Names}} (vector$<$ Q\+String $>$)
+\begin{DoxyCompactList}\small\item\em A public method for setting the catogories from Stats\+Can. \end{DoxyCompactList}\item 
+vector$<$ Q\+String $>$ \mbox{\hyperlink{classSQLManager_acec5f77e10c9d2fc591de4810605c370}{get\+Category\+Names}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the catogories from Stats\+Can. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a1f0621d2a9e8d863274499919ff8061b}{set\+Average\+Canadian\+Spending}} (vector$<$ int $>$)
+\begin{DoxyCompactList}\small\item\em A public method for setting the average Canadian spending from Stats\+Can. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classSQLManager_a8bede2ceafa8c51185ca9ce79a265637}{get\+Average\+Canadian\+Spending}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the average Canadian spending from Stats\+Can. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_ab41fa9fed2aefb626bf22ed72c1d17c1}{set\+User\+Annual\+Income}} (int)
+\begin{DoxyCompactList}\small\item\em A public method for setting the average annual income of user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSQLManager_a8cdb54546f505cd832151140606831b7}{get\+User\+Annual\+Income}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the average annual income of user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_aa71fa248fb6a3be1d8e06d03bda46129}{set\+Estimated\+Spending}} (vector$<$ int $>$)
+\begin{DoxyCompactList}\small\item\em A public method for setting the estimated spending of user. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classSQLManager_a4d063dbd18984a97fe2a83378efb95e3}{get\+Estimated\+Spending}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the estimated spending of user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a209198b3dab6451d777e696cbf244aca}{set\+User\+Budget}} (vector$<$ int $>$)
+\begin{DoxyCompactList}\small\item\em A public method for setting the budget of user. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classSQLManager_a8335132c4093555c7513b152cb4d78a7}{get\+User\+Budget}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the budget of user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a453b14847e4604098aa35fb0c2c1f3d4}{set\+Smart\+Budget}} (bool)
+\begin{DoxyCompactList}\small\item\em A public method for setting the smart budget. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a7cfb3292bc22ebf9e81111c67814d6e0}{get\+Smart\+Budget}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the smart budget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_adc8012516b13daf47c8ba7f4402e6495}{set\+Warnings}} (bool)
+\begin{DoxyCompactList}\small\item\em A public method for setting the overspending warnings. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a028d7afbed4fe62cbb4f7d746c0c42b0}{get\+Warnings}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the overspending warnings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_ae78956980d101a9bcadc7a425bb46d4c}{set\+Data\+Sharing}} (bool)
+\begin{DoxyCompactList}\small\item\em A public method for setting the data sharing feature. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a56de8532e9cf62ff865ebb5a13a30dca}{get\+Data\+Sharing}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the data sharing feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a1c19c3ce24ea123b3e273b700eca0ec4}{set\+Preferences\+Saved}} (bool)
+\begin{DoxyCompactList}\small\item\em A public method for setting the preference feature. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a5def1ae201fc91a6947f8cc242f7fa85}{are\+Preferences\+Saved}} ()
+\begin{DoxyCompactList}\small\item\em A public method for getting the preference feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a00e7781ccc713a61783689e1f9e9be64}{save\+Transaction}} (\mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{Local\+Storage\+Manager\+::transaction\+Info}})
+\begin{DoxyCompactList}\small\item\em A public method for saving a transaction. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{Local\+Storage\+Manager\+::transaction\+Info}} $>$ \mbox{\hyperlink{classSQLManager_ad80f6668109296ea420cdb5492b177d3}{get\+Transactions}} (Q\+Date, Q\+Date)
+\begin{DoxyCompactList}\small\item\em A public method for getting transactions. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classSQLManager_a84a0ee4bc8c20233755e354f6f047d11}{get\+Actual\+Spending}} (Q\+Date, Q\+Date)
+\begin{DoxyCompactList}\small\item\em A public method for getting the actual spending. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classSQLManager_a5991a1f3bb671fda75eba299a01bcec1}{get\+Daily\+Spending}} (Q\+Date, Q\+Date)
+\begin{DoxyCompactList}\small\item\em A public method for getting the daily spending. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSQLManager_a8d0abdcccb063a53569e785b6ee4ed5f}{clear\+All\+Data}} ()
+\begin{DoxyCompactList}\small\item\em A public method for clearing the application database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+M\+Y\+S\+QL $\ast$ \mbox{\hyperlink{classSQLManager_acbffdf412325b043b515324500e1315c}{mysql\+Connection\+Setup}} (struct \mbox{\hyperlink{structSQLManager_1_1connectionID}{connection\+ID}} mysql\+\_\+details)
+\begin{DoxyCompactList}\small\item\em A private method for setting up connection between application to My\+S\+QL. \end{DoxyCompactList}\item 
+M\+Y\+S\+Q\+L\+\_\+\+R\+ES $\ast$ \mbox{\hyperlink{classSQLManager_abdd77a93c4b60b3602da2433bbd7fdba}{mysql\+Perform\+Query}} (M\+Y\+S\+QL $\ast$connection, const char $\ast$sql\+\_\+query)
+\begin{DoxyCompactList}\small\item\em A private method for getting the result of a S\+QL Query. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSQLManager_a8b5ae8a030ab6d5c64fca416e1d3a97e}{get\+Usrname}} (string name)
+\begin{DoxyCompactList}\small\item\em A private method for verifying the username. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSQLManager_a4e6e19b068e49988e16d13e370c002a5}\label{classSQLManager_a4e6e19b068e49988e16d13e370c002a5}} 
+M\+Y\+S\+QL $\ast$ \mbox{\hyperlink{classSQLManager_a4e6e19b068e49988e16d13e370c002a5}{conn}}
+\begin{DoxyCompactList}\small\item\em a private variable for application to My\+S\+QL connection \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSQLManager_a9c342350b12d6641802a4d18b4765ee7}\label{classSQLManager_a9c342350b12d6641802a4d18b4765ee7}} 
+bool \mbox{\hyperlink{classSQLManager_a9c342350b12d6641802a4d18b4765ee7}{session}}
+\begin{DoxyCompactList}\small\item\em a private variable for verifying if a user is loggin in and began a session \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSQLManager_ac77576d16838d24bace7bbae068ad49e}\label{classSQLManager_ac77576d16838d24bace7bbae068ad49e}} 
+string \mbox{\hyperlink{classSQLManager_ac77576d16838d24bace7bbae068ad49e}{userkey}}
+\begin{DoxyCompactList}\small\item\em a private variable for the user\textquotesingle{}s id of the current session. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSQLManager_a27a90c72b69aa1c02948549c8a78ac9f}\label{classSQLManager_a27a90c72b69aa1c02948549c8a78ac9f}} 
+string \mbox{\hyperlink{classSQLManager_a27a90c72b69aa1c02948549c8a78ac9f}{statcan\+Key}}
+\begin{DoxyCompactList}\small\item\em a private variable for the Statistic Canada id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Database model for the application. 
+
+\begin{DoxyAuthor}{Author}
+Brian Au. Provides access to the application\textquotesingle{}s database, and data retrieval and storage methods. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSQLManager_aaf23cda554187a59feeec915ebbe4456}\label{classSQLManager_aaf23cda554187a59feeec915ebbe4456}} 
+\index{SQLManager@{SQLManager}!SQLManager@{SQLManager}}
+\index{SQLManager@{SQLManager}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{SQLManager()}{SQLManager()}}
+{\footnotesize\ttfamily S\+Q\+L\+Manager\+::\+S\+Q\+L\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A constructor for \mbox{\hyperlink{classSQLManager}{S\+Q\+L\+Manager}}. \mbox{\Hypertarget{classSQLManager_a2a68b3eb43cbc83ca4e3192d67f3682f}\label{classSQLManager_a2a68b3eb43cbc83ca4e3192d67f3682f}} 
+\index{SQLManager@{SQLManager}!````~SQLManager@{$\sim$SQLManager}}
+\index{````~SQLManager@{$\sim$SQLManager}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SQLManager()}{~SQLManager()}}
+{\footnotesize\ttfamily S\+Q\+L\+Manager\+::$\sim$\+S\+Q\+L\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+A destructor for \mbox{\hyperlink{classSQLManager}{S\+Q\+L\+Manager}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSQLManager_a5def1ae201fc91a6947f8cc242f7fa85}\label{classSQLManager_a5def1ae201fc91a6947f8cc242f7fa85}} 
+\index{SQLManager@{SQLManager}!arePreferencesSaved@{arePreferencesSaved}}
+\index{arePreferencesSaved@{arePreferencesSaved}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{arePreferencesSaved()}{arePreferencesSaved()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::are\+Preferences\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the preference feature. 
+
+A public method for getting the preference feature of current user from the application database. \begin{DoxyReturn}{Returns}
+preference feature status in boolean. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a0392d3741513c8a5e7d7cd41cf19998e}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a8d0abdcccb063a53569e785b6ee4ed5f}\label{classSQLManager_a8d0abdcccb063a53569e785b6ee4ed5f}} 
+\index{SQLManager@{SQLManager}!clearAllData@{clearAllData}}
+\index{clearAllData@{clearAllData}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{clearAllData()}{clearAllData()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::clear\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for clearing the application database. 
+
+A public method for clearing the application completely. 
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a21a12bba51cef58d019b30f98803f423}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a84a0ee4bc8c20233755e354f6f047d11}\label{classSQLManager_a84a0ee4bc8c20233755e354f6f047d11}} 
+\index{SQLManager@{SQLManager}!getActualSpending@{getActualSpending}}
+\index{getActualSpending@{getActualSpending}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getActualSpending()}{getActualSpending()}}
+{\footnotesize\ttfamily vector$<$ int $>$ S\+Q\+L\+Manager\+::get\+Actual\+Spending (\begin{DoxyParamCaption}\item[{Q\+Date}]{lower,  }\item[{Q\+Date}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the actual spending. 
+
+A public method for getting the actual spending per categories derived fromn transaction history of current user between 2 specified date in the parameter from the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classSQLManager_acec5f77e10c9d2fc591de4810605c370}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & bound date. \\
+\hline
+{\em upper} & bound date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of total spending per categories. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_ad46198a69cd69c9d58c195ff336354b2}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a62eda7207e4058efdc4ef5403b3d17d1}\label{classSQLManager_a62eda7207e4058efdc4ef5403b3d17d1}} 
+\index{SQLManager@{SQLManager}!getAverageAnnualIncome@{getAverageAnnualIncome}}
+\index{getAverageAnnualIncome@{getAverageAnnualIncome}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getAverageAnnualIncome()}{getAverageAnnualIncome()}}
+{\footnotesize\ttfamily int S\+Q\+L\+Manager\+::get\+Average\+Annual\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the average annual income of Canadian from Stats\+Can. 
+
+A public method for getting the average annual income of Canadian from Stats\+Can in the application database. \begin{DoxyReturn}{Returns}
+the average annual income of Canadian in int. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a923d71e94b7d426dc2e763e2c6e7138e}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a8bede2ceafa8c51185ca9ce79a265637}\label{classSQLManager_a8bede2ceafa8c51185ca9ce79a265637}} 
+\index{SQLManager@{SQLManager}!getAverageCanadianSpending@{getAverageCanadianSpending}}
+\index{getAverageCanadianSpending@{getAverageCanadianSpending}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getAverageCanadianSpending()}{getAverageCanadianSpending()}}
+{\footnotesize\ttfamily vector$<$ int $>$ S\+Q\+L\+Manager\+::get\+Average\+Canadian\+Spending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the average Canadian spending from Stats\+Can. 
+
+A public method for getting the average Canadian spending from Stats\+Can in the application database. \begin{DoxyReturn}{Returns}
+the list of spending in vector$<$int$>$. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a2247dc09ae8aca2ecd709ad161f7f339}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_acec5f77e10c9d2fc591de4810605c370}\label{classSQLManager_acec5f77e10c9d2fc591de4810605c370}} 
+\index{SQLManager@{SQLManager}!getCategoryNames@{getCategoryNames}}
+\index{getCategoryNames@{getCategoryNames}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getCategoryNames()}{getCategoryNames()}}
+{\footnotesize\ttfamily vector$<$ Q\+String $>$ S\+Q\+L\+Manager\+::get\+Category\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the catogories from Stats\+Can. 
+
+A public method for getting the catogories from Stats\+Can in the application database. \begin{DoxyReturn}{Returns}
+the list of categories in vector$<$\+Q\+String$>$. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a84977b0785aea6a8cb645853602dbcaa}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a5991a1f3bb671fda75eba299a01bcec1}\label{classSQLManager_a5991a1f3bb671fda75eba299a01bcec1}} 
+\index{SQLManager@{SQLManager}!getDailySpending@{getDailySpending}}
+\index{getDailySpending@{getDailySpending}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getDailySpending()}{getDailySpending()}}
+{\footnotesize\ttfamily vector$<$ int $>$ S\+Q\+L\+Manager\+::get\+Daily\+Spending (\begin{DoxyParamCaption}\item[{Q\+Date}]{lower,  }\item[{Q\+Date}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the daily spending. 
+
+A public method for getting the total daily spending derived fromn transaction history of current user between 2 specified date in the parameter from the application database. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & bound date. \\
+\hline
+{\em upper} & bound date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of spending per day. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a88509fb862d7558d5fc71da648e5fcb7}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a56de8532e9cf62ff865ebb5a13a30dca}\label{classSQLManager_a56de8532e9cf62ff865ebb5a13a30dca}} 
+\index{SQLManager@{SQLManager}!getDataSharing@{getDataSharing}}
+\index{getDataSharing@{getDataSharing}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getDataSharing()}{getDataSharing()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::get\+Data\+Sharing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the data sharing feature. 
+
+A public method for getting the data sharing feature of current user from the application database. \begin{DoxyReturn}{Returns}
+data sharing feature status in boolean. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a055c36f0a6c050d8838756be34016965}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a4d063dbd18984a97fe2a83378efb95e3}\label{classSQLManager_a4d063dbd18984a97fe2a83378efb95e3}} 
+\index{SQLManager@{SQLManager}!getEstimatedSpending@{getEstimatedSpending}}
+\index{getEstimatedSpending@{getEstimatedSpending}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getEstimatedSpending()}{getEstimatedSpending()}}
+{\footnotesize\ttfamily vector$<$ int $>$ S\+Q\+L\+Manager\+::get\+Estimated\+Spending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the estimated spending of user. 
+
+A public method for getting the estimated spending of current user from the application database. \begin{DoxyReturn}{Returns}
+the list of spending in vector$<$int$>$. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_adeb67c323e5f279d8183b9ca0b860203}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a7cfb3292bc22ebf9e81111c67814d6e0}\label{classSQLManager_a7cfb3292bc22ebf9e81111c67814d6e0}} 
+\index{SQLManager@{SQLManager}!getSmartBudget@{getSmartBudget}}
+\index{getSmartBudget@{getSmartBudget}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getSmartBudget()}{getSmartBudget()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::get\+Smart\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the smart budget. 
+
+A public method for getting the smart budget feature of current user from the application database. \begin{DoxyReturn}{Returns}
+smart budget status in boolean. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a7c8d3eaf88e56e45746b943317f9d10c}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_ad80f6668109296ea420cdb5492b177d3}\label{classSQLManager_ad80f6668109296ea420cdb5492b177d3}} 
+\index{SQLManager@{SQLManager}!getTransactions@{getTransactions}}
+\index{getTransactions@{getTransactions}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getTransactions()}{getTransactions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{Local\+Storage\+Manager\+::transaction\+Info}} $>$ S\+Q\+L\+Manager\+::get\+Transactions (\begin{DoxyParamCaption}\item[{Q\+Date}]{lower,  }\item[{Q\+Date}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting transactions. 
+
+A public method for getting the transactions of current user between 2 specified date in the parameter from the application database. 
+\begin{DoxyParams}{Parameters}
+{\em lower} & bound date. \\
+\hline
+{\em upper} & bound date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of transaction. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_af76feba56125d2ab93d7e1e0ed179ce0}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_adc7b65566a4d4b29ad4ff2de06b691ed}\label{classSQLManager_adc7b65566a4d4b29ad4ff2de06b691ed}} 
+\index{SQLManager@{SQLManager}!getUser@{getUser}}
+\index{getUser@{getUser}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily string S\+Q\+L\+Manager\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A public method for getting the userid of the current session. 
+
+A public method for getting the userid of the current session \begin{DoxyReturn}{Returns}
+username. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSQLManager_a8cdb54546f505cd832151140606831b7}\label{classSQLManager_a8cdb54546f505cd832151140606831b7}} 
+\index{SQLManager@{SQLManager}!getUserAnnualIncome@{getUserAnnualIncome}}
+\index{getUserAnnualIncome@{getUserAnnualIncome}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getUserAnnualIncome()}{getUserAnnualIncome()}}
+{\footnotesize\ttfamily int S\+Q\+L\+Manager\+::get\+User\+Annual\+Income (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the average annual income of user. 
+
+A public method for getting the average annual income of current user from the application database. \begin{DoxyReturn}{Returns}
+the average annual income of user in int. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_af657b71bb0e98267b95bb53ceea90fe5}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a8335132c4093555c7513b152cb4d78a7}\label{classSQLManager_a8335132c4093555c7513b152cb4d78a7}} 
+\index{SQLManager@{SQLManager}!getUserBudget@{getUserBudget}}
+\index{getUserBudget@{getUserBudget}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getUserBudget()}{getUserBudget()}}
+{\footnotesize\ttfamily vector$<$ int $>$ S\+Q\+L\+Manager\+::get\+User\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the budget of user. 
+
+A public method for getting the budget of current user from the application database. \begin{DoxyReturn}{Returns}
+the list of spending in vector$<$int$>$. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a4211461f728fcfcc0dc9ce662af95c9b}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a8b5ae8a030ab6d5c64fca416e1d3a97e}\label{classSQLManager_a8b5ae8a030ab6d5c64fca416e1d3a97e}} 
+\index{SQLManager@{SQLManager}!getUsrname@{getUsrname}}
+\index{getUsrname@{getUsrname}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getUsrname()}{getUsrname()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::get\+Usrname (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for verifying the username. 
+
+A private method for verifying if a username is in the database. 
+\begin{DoxyParams}{Parameters}
+{\em a} & username. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the availability of the username. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSQLManager_a028d7afbed4fe62cbb4f7d746c0c42b0}\label{classSQLManager_a028d7afbed4fe62cbb4f7d746c0c42b0}} 
+\index{SQLManager@{SQLManager}!getWarnings@{getWarnings}}
+\index{getWarnings@{getWarnings}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{getWarnings()}{getWarnings()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::get\+Warnings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for getting the overspending warnings. 
+
+A public method for getting the overspending warnings of current user from the application database. \begin{DoxyReturn}{Returns}
+overspending warnings status in boolean. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a1db14b3bece18564f047a94e83352959}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a883fc3aa59468e88094594f05df90124}\label{classSQLManager_a883fc3aa59468e88094594f05df90124}} 
+\index{SQLManager@{SQLManager}!guestSession@{guestSession}}
+\index{guestSession@{guestSession}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{guestSession()}{guestSession()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::guest\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for checking if the session is in guess mode. 
+
+A public method for checking the current session is in guess mode. \begin{DoxyReturn}{Returns}
+session status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLoginLocalModel_ae79ac53496901353e519d5d03fa6716c}{Login\+Local\+Model}}.
+
+\mbox{\Hypertarget{classSQLManager_a7f0181b868ad0a95bd4354012de8be74}\label{classSQLManager_a7f0181b868ad0a95bd4354012de8be74}} 
+\index{SQLManager@{SQLManager}!hasSession@{hasSession}}
+\index{hasSession@{hasSession}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{hasSession()}{hasSession()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::has\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for checking if a user has logged in. 
+
+A public method for checking a user has logged in to the application and that a session has begun. \begin{DoxyReturn}{Returns}
+session status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLoginLocalModel_a38d417df5e08f467417de890595ba4ac}{Login\+Local\+Model}}.
+
+\mbox{\Hypertarget{classSQLManager_a7f7d0a00141d0237c95074002924fcfd}\label{classSQLManager_a7f7d0a00141d0237c95074002924fcfd}} 
+\index{SQLManager@{SQLManager}!isStatsCanDataSaved@{isStatsCanDataSaved}}
+\index{isStatsCanDataSaved@{isStatsCanDataSaved}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{isStatsCanDataSaved()}{isStatsCanDataSaved()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::is\+Stats\+Can\+Data\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for verifying Stats\+Can data availability. 
+
+A public method for checking if the data of the Statistic Canada is stored in the application\textquotesingle{}s database. \begin{DoxyReturn}{Returns}
+the availability of Stats\+Can data in boolean. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a4c9a3ffa2543ec6621cf35ad9b6f8ee6}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_ac3bee9c05544b571705e647d556acb0f}\label{classSQLManager_ac3bee9c05544b571705e647d556acb0f}} 
+\index{SQLManager@{SQLManager}!isUserDataSaved@{isUserDataSaved}}
+\index{isUserDataSaved@{isUserDataSaved}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{isUserDataSaved()}{isUserDataSaved()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::is\+User\+Data\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for verifying user data availability. 
+
+A public method for checking if the data of the current application user is stored in the application\textquotesingle{}s database. \begin{DoxyReturn}{Returns}
+the availability of user data in boolean. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_aaa1a88960bda7a34271b6ed495bc13bc}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_ab2e9cedaafabac1d54ea83d8b12466d4}\label{classSQLManager_ab2e9cedaafabac1d54ea83d8b12466d4}} 
+\index{SQLManager@{SQLManager}!loginLocal@{loginLocal}}
+\index{loginLocal@{loginLocal}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{loginLocal()}{loginLocal()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::login\+Local (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{passcode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for checking a user ID in database. 
+
+A public method for checking if a user ID exists in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the verification result. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLoginLocalModel_af5bbb0f3ce880127ba9fac5ba0086e68}{Login\+Local\+Model}}.
+
+\mbox{\Hypertarget{classSQLManager_acbffdf412325b043b515324500e1315c}\label{classSQLManager_acbffdf412325b043b515324500e1315c}} 
+\index{SQLManager@{SQLManager}!mysqlConnectionSetup@{mysqlConnectionSetup}}
+\index{mysqlConnectionSetup@{mysqlConnectionSetup}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{mysqlConnectionSetup()}{mysqlConnectionSetup()}}
+{\footnotesize\ttfamily M\+Y\+S\+QL $\ast$ S\+Q\+L\+Manager\+::mysql\+Connection\+Setup (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structSQLManager_1_1connectionID}{connection\+ID}}}]{mysql\+\_\+details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for setting up connection between application to My\+S\+QL. 
+
+A private method for setting up connection between application to My\+S\+QL. 
+\begin{DoxyParams}{Parameters}
+{\em the} & application database information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the application to My\+S\+QL connection. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSQLManager_abdd77a93c4b60b3602da2433bbd7fdba}\label{classSQLManager_abdd77a93c4b60b3602da2433bbd7fdba}} 
+\index{SQLManager@{SQLManager}!mysqlPerformQuery@{mysqlPerformQuery}}
+\index{mysqlPerformQuery@{mysqlPerformQuery}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{mysqlPerformQuery()}{mysqlPerformQuery()}}
+{\footnotesize\ttfamily M\+Y\+S\+Q\+L\+\_\+\+R\+ES $\ast$ S\+Q\+L\+Manager\+::mysql\+Perform\+Query (\begin{DoxyParamCaption}\item[{M\+Y\+S\+QL $\ast$}]{connection,  }\item[{const char $\ast$}]{sql\+\_\+query }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for getting the result of a S\+QL Query. 
+
+A private method for getting the result as a database table of a S\+QL Query specified in the parameter. 
+\begin{DoxyParams}{Parameters}
+{\em the} & application to My\+S\+QL connection. \\
+\hline
+{\em a} & S\+QL query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Query result in a table. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSQLManager_aa36ca8a3a314864183fbf0c77ac0afbe}\label{classSQLManager_aa36ca8a3a314864183fbf0c77ac0afbe}} 
+\index{SQLManager@{SQLManager}!registerLocal@{registerLocal}}
+\index{registerLocal@{registerLocal}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{registerLocal()}{registerLocal()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+Manager\+::register\+Local (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{passcode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for adding a user ID to database. 
+
+A public method for storing a new user ID in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the registration. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLoginLocalModel_a930fdabe9031c2b3369dcb172d6bd24c}{Login\+Local\+Model}}.
+
+\mbox{\Hypertarget{classSQLManager_a00e7781ccc713a61783689e1f9e9be64}\label{classSQLManager_a00e7781ccc713a61783689e1f9e9be64}} 
+\index{SQLManager@{SQLManager}!saveTransaction@{saveTransaction}}
+\index{saveTransaction@{saveTransaction}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{saveTransaction()}{saveTransaction()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::save\+Transaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLocalStorageManager_1_1transactionInfo}{Local\+Storage\+Manager\+::transaction\+Info}}}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for saving a transaction. 
+
+A public method for saving a transaction of current user to the application database. 
+\begin{DoxyParams}{Parameters}
+{\em a} & transaction information. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a3dc6b2e75c9bb31ec341fa2cef3d41d0}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_ad7359d3aadb9deb2294c6dbf42c6496a}\label{classSQLManager_ad7359d3aadb9deb2294c6dbf42c6496a}} 
+\index{SQLManager@{SQLManager}!setAverageAnnualIncome@{setAverageAnnualIncome}}
+\index{setAverageAnnualIncome@{setAverageAnnualIncome}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setAverageAnnualIncome()}{setAverageAnnualIncome()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Average\+Annual\+Income (\begin{DoxyParamCaption}\item[{int}]{income }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting the average annual income of Canadian from Stats\+Can. 
+
+A public method for storing the average annual income of Canadian from Stats\+Can in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & average annual income of Canadian in int. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_aaef8414dcf46b53213b606af81bb41b5}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a1f0621d2a9e8d863274499919ff8061b}\label{classSQLManager_a1f0621d2a9e8d863274499919ff8061b}} 
+\index{SQLManager@{SQLManager}!setAverageCanadianSpending@{setAverageCanadianSpending}}
+\index{setAverageCanadianSpending@{setAverageCanadianSpending}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setAverageCanadianSpending()}{setAverageCanadianSpending()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Average\+Canadian\+Spending (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{spendings }\end{DoxyParamCaption})}
+
+
+
+A public method for setting the average Canadian spending from Stats\+Can. 
+
+A public method for stroing the average Canadian spending from Stats\+Can in the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classSQLManager_acec5f77e10c9d2fc591de4810605c370}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of spending in vector$<$int$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSQLManager_ad5fc18049edbf49d53ad83399a86988c}\label{classSQLManager_ad5fc18049edbf49d53ad83399a86988c}} 
+\index{SQLManager@{SQLManager}!setCategoryNames@{setCategoryNames}}
+\index{setCategoryNames@{setCategoryNames}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setCategoryNames()}{setCategoryNames()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Category\+Names (\begin{DoxyParamCaption}\item[{vector$<$ Q\+String $>$}]{categories }\end{DoxyParamCaption})}
+
+
+
+A public method for setting the catogories from Stats\+Can. 
+
+A public method for stroing the catogories from Stats\+Can in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of categories in vector$<$\+Q\+String$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSQLManager_ae78956980d101a9bcadc7a425bb46d4c}\label{classSQLManager_ae78956980d101a9bcadc7a425bb46d4c}} 
+\index{SQLManager@{SQLManager}!setDataSharing@{setDataSharing}}
+\index{setDataSharing@{setDataSharing}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setDataSharing()}{setDataSharing()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Data\+Sharing (\begin{DoxyParamCaption}\item[{bool}]{share }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting the data sharing feature. 
+
+A public method for setting the data sharing feature of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em data} & sharing feature status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a280100aa425369ef0ced2c7f5d76de09}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_aa71fa248fb6a3be1d8e06d03bda46129}\label{classSQLManager_aa71fa248fb6a3be1d8e06d03bda46129}} 
+\index{SQLManager@{SQLManager}!setEstimatedSpending@{setEstimatedSpending}}
+\index{setEstimatedSpending@{setEstimatedSpending}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setEstimatedSpending()}{setEstimatedSpending()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Estimated\+Spending (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{spendings }\end{DoxyParamCaption})}
+
+
+
+A public method for setting the estimated spending of user. 
+
+A public method for setting the estimated spending of current user in the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classSQLManager_acec5f77e10c9d2fc591de4810605c370}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of spending in vector$<$int$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSQLManager_a1c19c3ce24ea123b3e273b700eca0ec4}\label{classSQLManager_a1c19c3ce24ea123b3e273b700eca0ec4}} 
+\index{SQLManager@{SQLManager}!setPreferencesSaved@{setPreferencesSaved}}
+\index{setPreferencesSaved@{setPreferencesSaved}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setPreferencesSaved()}{setPreferencesSaved()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Preferences\+Saved (\begin{DoxyParamCaption}\item[{bool}]{pref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting the preference feature. 
+
+A public method for setting the preference feature of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em preference} & feature status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a7d82db7bad21f133b65f31072d8011b4}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a453b14847e4604098aa35fb0c2c1f3d4}\label{classSQLManager_a453b14847e4604098aa35fb0c2c1f3d4}} 
+\index{SQLManager@{SQLManager}!setSmartBudget@{setSmartBudget}}
+\index{setSmartBudget@{setSmartBudget}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setSmartBudget()}{setSmartBudget()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Smart\+Budget (\begin{DoxyParamCaption}\item[{bool}]{smart }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting the smart budget. 
+
+A public method for setting the smart budget feature of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em smart} & budget status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_ad8d170cd275271ada55b2ee1dd75da7f}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_ab23d0b4d2344db9b05ff90f106a068a1}\label{classSQLManager_ab23d0b4d2344db9b05ff90f106a068a1}} 
+\index{SQLManager@{SQLManager}!setStatsCanDataSaved@{setStatsCanDataSaved}}
+\index{setStatsCanDataSaved@{setStatsCanDataSaved}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setStatsCanDataSaved()}{setStatsCanDataSaved()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Stats\+Can\+Data\+Saved (\begin{DoxyParamCaption}\item[{bool}]{saved }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting Stats\+Can data availability. 
+
+A public for setting if the data of the Statistic Canada is stored in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & availability of Stats\+Can data in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_a54173cf98b6e28f70759d60d1b95e112}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_ab41fa9fed2aefb626bf22ed72c1d17c1}\label{classSQLManager_ab41fa9fed2aefb626bf22ed72c1d17c1}} 
+\index{SQLManager@{SQLManager}!setUserAnnualIncome@{setUserAnnualIncome}}
+\index{setUserAnnualIncome@{setUserAnnualIncome}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setUserAnnualIncome()}{setUserAnnualIncome()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+User\+Annual\+Income (\begin{DoxyParamCaption}\item[{int}]{income }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting the average annual income of user. 
+
+A public method for setting the average annual income of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & average annual income of user in int. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_adef98fb4c0f3f41044cf4577c4d90eff}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_a209198b3dab6451d777e696cbf244aca}\label{classSQLManager_a209198b3dab6451d777e696cbf244aca}} 
+\index{SQLManager@{SQLManager}!setUserBudget@{setUserBudget}}
+\index{setUserBudget@{setUserBudget}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setUserBudget()}{setUserBudget()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+User\+Budget (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{budget }\end{DoxyParamCaption})}
+
+
+
+A public method for setting the budget of user. 
+
+A public method for setting the budget of current user in the application database. The list of spending in the parameter matches the return of \mbox{\hyperlink{classSQLManager_acec5f77e10c9d2fc591de4810605c370}{get\+Category\+Names()}} accordingly to its index. 
+\begin{DoxyParams}{Parameters}
+{\em the} & list of spending in vector$<$int$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSQLManager_a1a1d415f9914cc0c3d330350899fa9db}\label{classSQLManager_a1a1d415f9914cc0c3d330350899fa9db}} 
+\index{SQLManager@{SQLManager}!setUserDataSaved@{setUserDataSaved}}
+\index{setUserDataSaved@{setUserDataSaved}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setUserDataSaved()}{setUserDataSaved()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+User\+Data\+Saved (\begin{DoxyParamCaption}\item[{bool}]{saved }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting user data availability. 
+
+A public method for setting if the data of the current application user is stored in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em the} & availability of user data in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_adfdd5c2a75bdd04d8055f331fe6f8cbb}{Local\+Storage\+Manager}}.
+
+\mbox{\Hypertarget{classSQLManager_adc8012516b13daf47c8ba7f4402e6495}\label{classSQLManager_adc8012516b13daf47c8ba7f4402e6495}} 
+\index{SQLManager@{SQLManager}!setWarnings@{setWarnings}}
+\index{setWarnings@{setWarnings}!SQLManager@{SQLManager}}
+\doxysubsubsection{\texorpdfstring{setWarnings()}{setWarnings()}}
+{\footnotesize\ttfamily void S\+Q\+L\+Manager\+::set\+Warnings (\begin{DoxyParamCaption}\item[{bool}]{warn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A public method for setting the overspending warnings. 
+
+A public method for setting the overspending warnings of current user in the application database. 
+\begin{DoxyParams}{Parameters}
+{\em overspending} & warnings status in boolean. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLocalStorageManager_aa9717e857eff2ca8d28ee207e8dd7d0a}{Local\+Storage\+Manager}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+Q\+L\+Manager.\+h\item 
+S\+Q\+L\+Manager.\+cpp\end{DoxyCompactItemize}

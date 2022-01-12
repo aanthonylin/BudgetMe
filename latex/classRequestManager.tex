@@ -1,0 +1,109 @@
+\hypertarget{classRequestManager}{}\doxysection{Request\+Manager Class Reference}
+\label{classRequestManager}\index{RequestManager@{RequestManager}}
+
+
+Makes a request to an A\+PI.  
+
+
+
+
+{\ttfamily \#include $<$Request\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRequestManager_a1a58837bc718fee5e9b444ed96a042ec}{set\+U\+RL}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Set the U\+RL of the A\+PI. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRequestManager_a240bb48d90c47c754c7a2412c2721900}{get\+U\+RL}} ()
+\begin{DoxyCompactList}\small\item\em Gets where the request is being made to. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRequestManager_a5b2bc24be3d4f7f7c8fcf76465952730}{make\+Post\+Request}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Makes a P\+O\+ST request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classRequestManager_a8f1813dca85d519ae6a4b0791925f537}{A\+P\+I\+\_\+\+U\+RL}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em The destination of the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Makes a request to an A\+PI. 
+
+This object will make request to an A\+PI. Currently it only supports making P\+O\+ST request. It can make a request to anywhere and it is not limited.
+
+\begin{DoxyAuthor}{Author}
+Anthony Lin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRequestManager_a240bb48d90c47c754c7a2412c2721900}\label{classRequestManager_a240bb48d90c47c754c7a2412c2721900}} 
+\index{RequestManager@{RequestManager}!getURL@{getURL}}
+\index{getURL@{getURL}!RequestManager@{RequestManager}}
+\doxysubsubsection{\texorpdfstring{getURL()}{getURL()}}
+{\footnotesize\ttfamily std\+::string Request\+Manager\+::get\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets where the request is being made to. 
+
+It returns the where the A\+PI is currently set to
+
+\begin{DoxyReturn}{Returns}
+A string that represents the U\+RL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRequestManager_a5b2bc24be3d4f7f7c8fcf76465952730}\label{classRequestManager_a5b2bc24be3d4f7f7c8fcf76465952730}} 
+\index{RequestManager@{RequestManager}!makePostRequest@{makePostRequest}}
+\index{makePostRequest@{makePostRequest}!RequestManager@{RequestManager}}
+\doxysubsubsection{\texorpdfstring{makePostRequest()}{makePostRequest()}}
+{\footnotesize\ttfamily std\+::string Request\+Manager\+::make\+Post\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{P\+O\+S\+T\+Body }\end{DoxyParamCaption})}
+
+
+
+Makes a P\+O\+ST request. 
+
+It makes a P\+O\+ST request to the indicated A\+PI with the parameter also being sent to the A\+PI
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+O\+S\+T\+Body} & The J\+S\+ON that should be sent to the A\+PI\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response of the A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRequestManager_a1a58837bc718fee5e9b444ed96a042ec}\label{classRequestManager_a1a58837bc718fee5e9b444ed96a042ec}} 
+\index{RequestManager@{RequestManager}!setURL@{setURL}}
+\index{setURL@{setURL}!RequestManager@{RequestManager}}
+\doxysubsubsection{\texorpdfstring{setURL()}{setURL()}}
+{\footnotesize\ttfamily void Request\+Manager\+::set\+U\+RL (\begin{DoxyParamCaption}\item[{std\+::string}]{U\+RL }\end{DoxyParamCaption})}
+
+
+
+Set the U\+RL of the A\+PI. 
+
+Takses a parameter and sets the U\+RL to the parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+RL} & The U\+RL of where to request is to be made to \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRequestManager_a8f1813dca85d519ae6a4b0791925f537}\label{classRequestManager_a8f1813dca85d519ae6a4b0791925f537}} 
+\index{RequestManager@{RequestManager}!API\_URL@{API\_URL}}
+\index{API\_URL@{API\_URL}!RequestManager@{RequestManager}}
+\doxysubsubsection{\texorpdfstring{API\_URL}{API\_URL}}
+{\footnotesize\ttfamily std\+::string Request\+Manager\+::\+A\+P\+I\+\_\+\+U\+RL = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The destination of the request. 
+
+This is where the request will go when called. It is defaulted to nothing (\char`\"{}\char`\"{}) and must be set before use. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Request\+Manager.\+h\item 
+Request\+Manager.\+cpp\end{DoxyCompactItemize}

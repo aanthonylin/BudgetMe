@@ -1,0 +1,139 @@
+\hypertarget{classLoginLocalModel}{}\doxysection{Login\+Local\+Model Class Reference}
+\label{classLoginLocalModel}\index{LoginLocalModel@{LoginLocalModel}}
+
+
+Interface for accessing the userid table of application\textquotesingle{}s database.  
+
+
+
+
+{\ttfamily \#include $<$Login\+Local\+Model.\+h$>$}
+
+
+
+Inheritance diagram for Login\+Local\+Model\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLoginLocalModel_a25573989f48def54a495d89d79a84bc0}{$\sim$\+Login\+Local\+Model}} ()
+\begin{DoxyCompactList}\small\item\em A virtual destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLoginLocalModel_a930fdabe9031c2b3369dcb172d6bd24c}{register\+Local}} (string, string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for adding a user ID to database. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLoginLocalModel_af5bbb0f3ce880127ba9fac5ba0086e68}{login\+Local}} (string, string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for checking a user ID in database. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classLoginLocalModel_a38d417df5e08f467417de890595ba4ac}{has\+Session}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for checking if a user has logged in. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLoginLocalModel_ae79ac53496901353e519d5d03fa6716c}{guest\+Session}} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for checking if the session is in guess mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for accessing the userid table of application\textquotesingle{}s database. 
+
+\begin{DoxyAuthor}{Author}
+Brian Au Interface for accessing the userid table of application\textquotesingle{}s database. Provide the interface for user ID retrieval and storage methods. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoginLocalModel_a25573989f48def54a495d89d79a84bc0}\label{classLoginLocalModel_a25573989f48def54a495d89d79a84bc0}} 
+\index{LoginLocalModel@{LoginLocalModel}!````~LoginLocalModel@{$\sim$LoginLocalModel}}
+\index{````~LoginLocalModel@{$\sim$LoginLocalModel}!LoginLocalModel@{LoginLocalModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$LoginLocalModel()}{~LoginLocalModel()}}
+{\footnotesize\ttfamily virtual Login\+Local\+Model\+::$\sim$\+Login\+Local\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A virtual destructor. 
+
+A virtual destructor for \mbox{\hyperlink{classLoginLocalModel}{Login\+Local\+Model}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoginLocalModel_ae79ac53496901353e519d5d03fa6716c}\label{classLoginLocalModel_ae79ac53496901353e519d5d03fa6716c}} 
+\index{LoginLocalModel@{LoginLocalModel}!guestSession@{guestSession}}
+\index{guestSession@{guestSession}!LoginLocalModel@{LoginLocalModel}}
+\doxysubsubsection{\texorpdfstring{guestSession()}{guestSession()}}
+{\footnotesize\ttfamily virtual void Login\+Local\+Model\+::guest\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for checking if the session is in guess mode. 
+
+A pure virtual method for checking the current session is in guess mode. \begin{DoxyReturn}{Returns}
+session status. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a883fc3aa59468e88094594f05df90124}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLoginLocalModel_a38d417df5e08f467417de890595ba4ac}\label{classLoginLocalModel_a38d417df5e08f467417de890595ba4ac}} 
+\index{LoginLocalModel@{LoginLocalModel}!hasSession@{hasSession}}
+\index{hasSession@{hasSession}!LoginLocalModel@{LoginLocalModel}}
+\doxysubsubsection{\texorpdfstring{hasSession()}{hasSession()}}
+{\footnotesize\ttfamily virtual bool Login\+Local\+Model\+::has\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for checking if a user has logged in. 
+
+A pure virtual method for checking a user has logged in to the application and that a session has begun. \begin{DoxyReturn}{Returns}
+session status. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_a7f0181b868ad0a95bd4354012de8be74}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLoginLocalModel_af5bbb0f3ce880127ba9fac5ba0086e68}\label{classLoginLocalModel_af5bbb0f3ce880127ba9fac5ba0086e68}} 
+\index{LoginLocalModel@{LoginLocalModel}!loginLocal@{loginLocal}}
+\index{loginLocal@{loginLocal}!LoginLocalModel@{LoginLocalModel}}
+\doxysubsubsection{\texorpdfstring{loginLocal()}{loginLocal()}}
+{\footnotesize\ttfamily virtual bool Login\+Local\+Model\+::login\+Local (\begin{DoxyParamCaption}\item[{string}]{,  }\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for checking a user ID in database. 
+
+A pure virtual method for checking if a user ID exists in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the verification result. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_ab2e9cedaafabac1d54ea83d8b12466d4}{S\+Q\+L\+Manager}}.
+
+\mbox{\Hypertarget{classLoginLocalModel_a930fdabe9031c2b3369dcb172d6bd24c}\label{classLoginLocalModel_a930fdabe9031c2b3369dcb172d6bd24c}} 
+\index{LoginLocalModel@{LoginLocalModel}!registerLocal@{registerLocal}}
+\index{registerLocal@{registerLocal}!LoginLocalModel@{LoginLocalModel}}
+\doxysubsubsection{\texorpdfstring{registerLocal()}{registerLocal()}}
+{\footnotesize\ttfamily virtual bool Login\+Local\+Model\+::register\+Local (\begin{DoxyParamCaption}\item[{string}]{,  }\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual method for adding a user ID to database. 
+
+A pure virtual method for storing a new user ID in the application\textquotesingle{}s database. 
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the registration. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSQLManager_aa36ca8a3a314864183fbf0c77ac0afbe}{S\+Q\+L\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Login\+Local\+Model.\+h\end{DoxyCompactItemize}

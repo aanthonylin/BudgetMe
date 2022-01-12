@@ -1,0 +1,287 @@
+\hypertarget{classLoginLocalView}{}\doxysection{Login\+Local\+View Class Reference}
+\label{classLoginLocalView}\index{LoginLocalView@{LoginLocalView}}
+
+
+View class for the application\textquotesingle{}s login system.  
+
+
+
+
+{\ttfamily \#include $<$Login\+Local\+View.\+h$>$}
+
+
+
+Inheritance diagram for Login\+Local\+View\+:
+% FIG 0
+
+
+Collaboration diagram for Login\+Local\+View\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLoginLocalView_afbd54692e0ee5a726b259bac7191ee7e}{Login\+Local\+View}} (\mbox{\hyperlink{classLoginLocalModel}{Login\+Local\+Model}} $\ast$, \mbox{\hyperlink{classLoginManager}{Login\+Manager}} $\ast$, Q\+String)
+\begin{DoxyCompactList}\small\item\em A constructor for login view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLoginLocalView_af895dba6c9b064bada8c8733e0d135cf}{Login\+Local\+View}} (Q\+String)
+\begin{DoxyCompactList}\small\item\em A constructor for post login view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLoginLocalView_a251d0b2167a8e68cecf9b441e12d656f}{$\sim$\+Login\+Local\+View}} ()
+\begin{DoxyCompactList}\small\item\em A destructor for login view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a73c82444e1a21436ee01f305556e9b9e}{handle\+Login}} ()
+\begin{DoxyCompactList}\small\item\em A public method for handling login. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a541776a0aa0d7915daa0df9d06d3ae04}{handle\+Registration}} ()
+\begin{DoxyCompactList}\small\item\em A public method for handling registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a5b78c71ea0e0ba2bba67f53cdebb9b1f}{handle\+Guest}} ()
+\begin{DoxyCompactList}\small\item\em A public method for handling guest. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLoginLocalView_a02ee9ceb28ffac632aa97fd10a097810}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em A public method for cheching if a user has loggin in. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a9f5e7b1ee7c7af54df8d455c48af0c8f}{logout}} ()
+\begin{DoxyCompactList}\small\item\em A public method for displaying the logout G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLoginLocalView_a4a9a548e28d85a9d14a6e29508d20fe6}{login}} ()
+\begin{DoxyCompactList}\small\item\em A private method for displaying the login G\+UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a4f2a7baea277c9e5befa2aefa129d0b0}{registration}} ()
+\begin{DoxyCompactList}\small\item\em A private method for displaying the registration G\+UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a87107eb028ea5bb60108a8a264e016a8}{handle\+Logout}} ()
+\begin{DoxyCompactList}\small\item\em A private method for handling logout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a2d145cfdad2c913000c457d493cac1b9}{widget\+Ini}} ()
+\begin{DoxyCompactList}\small\item\em A private method for initializing all the wigdets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a854429917edddb7d791769c251b6d22f}{remove\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em A private method for removing all the wigdets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_ac3d59ada9cb6309cb8a8fd13d72284fe}{add\+Login\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em A private method for adding the login wigdets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoginLocalView_a33001bcdb4fffbde2df1ed0650a97bf0}{add\+Reg\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em A private method for adding the registration wigdets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLoginLocalView_a53dfad60099bb6ee2f7014e3c2ad4247}\label{classLoginLocalView_a53dfad60099bb6ee2f7014e3c2ad4247}} 
+Q\+Label $\ast$ \mbox{\hyperlink{classLoginLocalView_a53dfad60099bb6ee2f7014e3c2ad4247}{top\+Lab}}
+\begin{DoxyCompactList}\small\item\em the upper label of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a852813a06074f6f1abe1bbeaed13b7a0}\label{classLoginLocalView_a852813a06074f6f1abe1bbeaed13b7a0}} 
+Q\+Label $\ast$ \mbox{\hyperlink{classLoginLocalView_a852813a06074f6f1abe1bbeaed13b7a0}{bot\+Lab}}
+\begin{DoxyCompactList}\small\item\em the bottom label of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a0463e3b90378b23d659e33f1a8925c8e}\label{classLoginLocalView_a0463e3b90378b23d659e33f1a8925c8e}} 
+Q\+Label $\ast$ \mbox{\hyperlink{classLoginLocalView_a0463e3b90378b23d659e33f1a8925c8e}{status\+Lab}}
+\begin{DoxyCompactList}\small\item\em the status label for the login/registration proccess of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a49f80f8b412caa069029a7ea3f4c6be9}\label{classLoginLocalView_a49f80f8b412caa069029a7ea3f4c6be9}} 
+Q\+Frame $\ast$ \mbox{\hyperlink{classLoginLocalView_a49f80f8b412caa069029a7ea3f4c6be9}{space\+Line}}
+\begin{DoxyCompactList}\small\item\em the seperator line of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a0e837b47be2f6a0393bd6ede9bfc9146}\label{classLoginLocalView_a0e837b47be2f6a0393bd6ede9bfc9146}} 
+Q\+Line\+Edit $\ast$ \mbox{\hyperlink{classLoginLocalView_a0e837b47be2f6a0393bd6ede9bfc9146}{username\+Line}}
+\begin{DoxyCompactList}\small\item\em the username textfield of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_ae2b1a766c6d551da11e96d0d9b833ea2}\label{classLoginLocalView_ae2b1a766c6d551da11e96d0d9b833ea2}} 
+Q\+Line\+Edit $\ast$ \mbox{\hyperlink{classLoginLocalView_ae2b1a766c6d551da11e96d0d9b833ea2}{password\+Line}}
+\begin{DoxyCompactList}\small\item\em the password textfield of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a1e8c75e521f1518fa36f85ccd8573363}\label{classLoginLocalView_a1e8c75e521f1518fa36f85ccd8573363}} 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{classLoginLocalView_a1e8c75e521f1518fa36f85ccd8573363}{login\+Button}}
+\begin{DoxyCompactList}\small\item\em the login button for the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a7bbd945b74fc410274f0bf1b298d5993}\label{classLoginLocalView_a7bbd945b74fc410274f0bf1b298d5993}} 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{classLoginLocalView_a7bbd945b74fc410274f0bf1b298d5993}{register\+Button}}
+\begin{DoxyCompactList}\small\item\em the registration button for the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a862c5e869710e9f958a9c107d47cbceb}\label{classLoginLocalView_a862c5e869710e9f958a9c107d47cbceb}} 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{classLoginLocalView_a862c5e869710e9f958a9c107d47cbceb}{logout\+Button}}
+\begin{DoxyCompactList}\small\item\em the logout button for the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a236476ba8afc4c927be053056f2716bd}\label{classLoginLocalView_a236476ba8afc4c927be053056f2716bd}} 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{classLoginLocalView_a236476ba8afc4c927be053056f2716bd}{guest\+Button}}
+\begin{DoxyCompactList}\small\item\em the guest button for the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a5da8a0e154ce5ae2a517a0baa34b9c99}\label{classLoginLocalView_a5da8a0e154ce5ae2a517a0baa34b9c99}} 
+Q\+String \mbox{\hyperlink{classLoginLocalView_a5da8a0e154ce5ae2a517a0baa34b9c99}{username}}
+\begin{DoxyCompactList}\small\item\em the username entered by the user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a9c221fe3196b6d9825af341fb5872153}\label{classLoginLocalView_a9c221fe3196b6d9825af341fb5872153}} 
+Q\+String \mbox{\hyperlink{classLoginLocalView_a9c221fe3196b6d9825af341fb5872153}{password}}
+\begin{DoxyCompactList}\small\item\em the password entered by the user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a15926ba8dbcf6c19652ecd834250321e}\label{classLoginLocalView_a15926ba8dbcf6c19652ecd834250321e}} 
+\mbox{\hyperlink{classLoginLocalModel}{Login\+Local\+Model}} $\ast$ \mbox{\hyperlink{classLoginLocalView_a15926ba8dbcf6c19652ecd834250321e}{m\+\_\+model}}
+\begin{DoxyCompactList}\small\item\em the \mbox{\hyperlink{classLoginLocalModel}{Login\+Local\+Model}} interface used by the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoginLocalView_a86711cde2c5baf400803df808aaa7e6e}\label{classLoginLocalView_a86711cde2c5baf400803df808aaa7e6e}} 
+\mbox{\hyperlink{classLoginManager}{Login\+Manager}} $\ast$ \mbox{\hyperlink{classLoginLocalView_a86711cde2c5baf400803df808aaa7e6e}{m\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em the Loginmanager interface used by the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View class for the application\textquotesingle{}s login system. 
+
+\begin{DoxyAuthor}{Author}
+Brian Au View class for the application\textquotesingle{}s login system. Provide the G\+UI for the login window. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoginLocalView_afbd54692e0ee5a726b259bac7191ee7e}\label{classLoginLocalView_afbd54692e0ee5a726b259bac7191ee7e}} 
+\index{LoginLocalView@{LoginLocalView}!LoginLocalView@{LoginLocalView}}
+\index{LoginLocalView@{LoginLocalView}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{LoginLocalView()}{LoginLocalView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Login\+Local\+View\+::\+Login\+Local\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLoginLocalModel}{Login\+Local\+Model}} $\ast$}]{model,  }\item[{\mbox{\hyperlink{classLoginManager}{Login\+Manager}} $\ast$}]{manager,  }\item[{Q\+String}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+A constructor for login view. 
+
+A constructor for the login portion of the view. 
+\begin{DoxyParams}{Parameters}
+{\em login} & model connection. \\
+\hline
+{\em login} & manager connection. \\
+\hline
+{\em title} & of the login window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoginLocalView_af895dba6c9b064bada8c8733e0d135cf}\label{classLoginLocalView_af895dba6c9b064bada8c8733e0d135cf}} 
+\index{LoginLocalView@{LoginLocalView}!LoginLocalView@{LoginLocalView}}
+\index{LoginLocalView@{LoginLocalView}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{LoginLocalView()}{LoginLocalView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Login\+Local\+View\+::\+Login\+Local\+View (\begin{DoxyParamCaption}\item[{Q\+String}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+A constructor for post login view. 
+
+A constructor for the post login portion of the view. 
+\begin{DoxyParams}{Parameters}
+{\em title} & of the login window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoginLocalView_a251d0b2167a8e68cecf9b441e12d656f}\label{classLoginLocalView_a251d0b2167a8e68cecf9b441e12d656f}} 
+\index{LoginLocalView@{LoginLocalView}!````~LoginLocalView@{$\sim$LoginLocalView}}
+\index{````~LoginLocalView@{$\sim$LoginLocalView}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{$\sim$LoginLocalView()}{~LoginLocalView()}}
+{\footnotesize\ttfamily Login\+Local\+View\+::$\sim$\+Login\+Local\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A destructor for login view. 
+
+A destructor for the class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoginLocalView_ac3d59ada9cb6309cb8a8fd13d72284fe}\label{classLoginLocalView_ac3d59ada9cb6309cb8a8fd13d72284fe}} 
+\index{LoginLocalView@{LoginLocalView}!addLoginWidget@{addLoginWidget}}
+\index{addLoginWidget@{addLoginWidget}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{addLoginWidget()}{addLoginWidget()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::add\+Login\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for adding the login wigdets. 
+
+A private method for adding all the wigdets required for the login G\+UI. \mbox{\Hypertarget{classLoginLocalView_a33001bcdb4fffbde2df1ed0650a97bf0}\label{classLoginLocalView_a33001bcdb4fffbde2df1ed0650a97bf0}} 
+\index{LoginLocalView@{LoginLocalView}!addRegWidget@{addRegWidget}}
+\index{addRegWidget@{addRegWidget}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{addRegWidget()}{addRegWidget()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::add\+Reg\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for adding the registration wigdets. 
+
+A private method for adding all the wigdets required for the registration G\+UI. \mbox{\Hypertarget{classLoginLocalView_a02ee9ceb28ffac632aa97fd10a097810}\label{classLoginLocalView_a02ee9ceb28ffac632aa97fd10a097810}} 
+\index{LoginLocalView@{LoginLocalView}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily bool Login\+Local\+View\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A public method for cheching if a user has loggin in. 
+
+A public method for cheching if a user has loggin in, and a session has begun. \begin{DoxyReturn}{Returns}
+session status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoginLocalView_a5b78c71ea0e0ba2bba67f53cdebb9b1f}\label{classLoginLocalView_a5b78c71ea0e0ba2bba67f53cdebb9b1f}} 
+\index{LoginLocalView@{LoginLocalView}!handleGuest@{handleGuest}}
+\index{handleGuest@{handleGuest}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{handleGuest()}{handleGuest()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::handle\+Guest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A public method for handling guest. 
+
+A public method for handling guest process. \mbox{\Hypertarget{classLoginLocalView_a73c82444e1a21436ee01f305556e9b9e}\label{classLoginLocalView_a73c82444e1a21436ee01f305556e9b9e}} 
+\index{LoginLocalView@{LoginLocalView}!handleLogin@{handleLogin}}
+\index{handleLogin@{handleLogin}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{handleLogin()}{handleLogin()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::handle\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A public method for handling login. 
+
+A public method for handling login verification. \mbox{\Hypertarget{classLoginLocalView_a87107eb028ea5bb60108a8a264e016a8}\label{classLoginLocalView_a87107eb028ea5bb60108a8a264e016a8}} 
+\index{LoginLocalView@{LoginLocalView}!handleLogout@{handleLogout}}
+\index{handleLogout@{handleLogout}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{handleLogout()}{handleLogout()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::handle\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for handling logout. 
+
+A private method for handling logout process. \mbox{\Hypertarget{classLoginLocalView_a541776a0aa0d7915daa0df9d06d3ae04}\label{classLoginLocalView_a541776a0aa0d7915daa0df9d06d3ae04}} 
+\index{LoginLocalView@{LoginLocalView}!handleRegistration@{handleRegistration}}
+\index{handleRegistration@{handleRegistration}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{handleRegistration()}{handleRegistration()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::handle\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A public method for handling registration. 
+
+A public method for handling registration process. \mbox{\Hypertarget{classLoginLocalView_a4a9a548e28d85a9d14a6e29508d20fe6}\label{classLoginLocalView_a4a9a548e28d85a9d14a6e29508d20fe6}} 
+\index{LoginLocalView@{LoginLocalView}!login@{login}}
+\index{login@{login}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for displaying the login G\+UI. 
+
+A private method for deleting the current G\+UI and displaying the login G\+UI. \mbox{\Hypertarget{classLoginLocalView_a9f5e7b1ee7c7af54df8d455c48af0c8f}\label{classLoginLocalView_a9f5e7b1ee7c7af54df8d455c48af0c8f}} 
+\index{LoginLocalView@{LoginLocalView}!logout@{logout}}
+\index{logout@{logout}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A public method for displaying the logout G\+UI. 
+
+A public method for deleting the current G\+UI and displaying the logout G\+UI. \mbox{\Hypertarget{classLoginLocalView_a4f2a7baea277c9e5befa2aefa129d0b0}\label{classLoginLocalView_a4f2a7baea277c9e5befa2aefa129d0b0}} 
+\index{LoginLocalView@{LoginLocalView}!registration@{registration}}
+\index{registration@{registration}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{registration()}{registration()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for displaying the registration G\+UI. 
+
+A private method for deleting the current G\+UI and displaying the registration G\+UI. \mbox{\Hypertarget{classLoginLocalView_a854429917edddb7d791769c251b6d22f}\label{classLoginLocalView_a854429917edddb7d791769c251b6d22f}} 
+\index{LoginLocalView@{LoginLocalView}!removeWidget@{removeWidget}}
+\index{removeWidget@{removeWidget}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{removeWidget()}{removeWidget()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::remove\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for removing all the wigdets. 
+
+A private method for removing all the wigdets required for the different G\+U\+Is. \mbox{\Hypertarget{classLoginLocalView_a2d145cfdad2c913000c457d493cac1b9}\label{classLoginLocalView_a2d145cfdad2c913000c457d493cac1b9}} 
+\index{LoginLocalView@{LoginLocalView}!widgetIni@{widgetIni}}
+\index{widgetIni@{widgetIni}!LoginLocalView@{LoginLocalView}}
+\doxysubsubsection{\texorpdfstring{widgetIni()}{widgetIni()}}
+{\footnotesize\ttfamily void Login\+Local\+View\+::widget\+Ini (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private method for initializing all the wigdets. 
+
+A private method for initializing all the wigdets required for the different G\+U\+Is. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Login\+Local\+View.\+h\item 
+Login\+Local\+View.\+cpp\end{DoxyCompactItemize}

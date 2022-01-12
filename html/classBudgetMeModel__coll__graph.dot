@@ -1,0 +1,26 @@
+digraph "BudgetMeModel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BudgetMeModel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="StarterBudgetModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStarterBudgetModel.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="EnterTransactionModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnterTransactionModel.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PreviewBudgetModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPreviewBudgetModel.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_budgetManager" ,fontname="Helvetica"];
+  Node5 [label="BudgetManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBudgetManager.html",tooltip="BudgetMe Algorithms."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_prefModel" ,fontname="Helvetica"];
+  Node6 [label="PreferencesModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPreferencesModel.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_storageManager" ,fontname="Helvetica"];
+  Node7 [label="LocalStorageManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLocalStorageManager.html",tooltip="Interface for database models."];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_statsManager" ,fontname="Helvetica"];
+  Node8 [label="BudgetMeDataManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBudgetMeDataManager.html",tooltip="An object that will retrieve data specifically for BudgetMe."];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" request" ,fontname="Helvetica"];
+  Node9 [label="StatsCanadaManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStatsCanadaManager.html",tooltip="An object that will retrieve data from Statisitcs Canada."];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" manager" ,fontname="Helvetica"];
+  Node10 [label="RequestManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRequestManager.html",tooltip="Makes a request to an API."];
+}
